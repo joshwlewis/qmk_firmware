@@ -1,0 +1,169 @@
+| + | | | 7c370e9bbde07196991f8ada61b05752fd4a2cc2 flabbergast - Chibios: Update the main chibios README.
+| + | | | 7f0198d86be549485c3aa3c9cbcef8c6acb0f197 flabbergast - Chibios: implement sleep LED for STM32.
+| |/ / /  
+| | * |   59576822bb5e262a3f71fcc1035b3b8085d0362a Jun Wako - Merge branch 'hotfix-mediakey'
+| | |\ \  
+| | | * | 915eb488b6f05335189751a0cc1aa7f150e5ff7b tmk - core: Fix media/consumer keys
+| |_|/ /  
+|/| | |   
+| | * |   a478c62c9cdd72ac59d867ce013ee2a833267659 Jun Wako - Merge branch 'hotfix-vusb'
+| | |\ \  
+| | | * | 88f90f32bd5f68767ac889265df3293a2dab5ea3 tmk - Fix for VUSB configuration
+| |_|/ /  
+|/| | |   
+| | * |   cccebfe51fb1e6dc281e0931ccd66e75fa1e3aa1 Jun Wako - Merge branch 'njbair-docfix'
+| | |\ \  
+| |/ / /  
+|/| | |   
+| | * | 0aaab57f559fd85180de17dd70fa8fa3318a4776 Nick Bair - Clean up wording in keymap example
+| | * | dc8bbc3d5d8b56778319c5088811459efab5defc Nick Bair - Clarify layer precedence
+| | * | 9e0b4c14681daf56c0d604e5cebdf2eb62cbf7ab Nick Bair - clarify layer documentation
+| |/ /  
+|/| |   
+* | |   c286d8cb43ab0573c09be0ee782a93f4d4bf86cb tmk - Merge pull request #10 from fredizzimo/chibios-contrib2
+|\ \ \  
+| |/ /  
+|/| |   
+| + | 062d74ed9c709f6b8b2c02f8a7e8ef34b6b836e6 Fred Sundvik - Update ChibiOS instructions
+| + | d47150f911b3f56446909afeb20f199e857ce8b6 Fred Sundvik - Add support for new version of ChibiOS and Contrib
+|/ /  
++ | afef9b4abd5ce5cb44387ffadde3279fedee1342 Jun Wako - Fix hard-coded path of CHIBIOS
+* |   95c5b1907356cbd48c04e992338f3c813e19d85b tmk - Merge pull request #7 from fredizzimo/sysvsize
+|\ \  
+| + | 27128a83122efc228c88fe26c2a945d157f4a2d2 Fred Sundvik - Sysv format for ChibiOS arm-none-eabi-size
+|/ /  
+| *   53a9c08bab53fb896eb9c6227ab426e121111447 tmk - Merge pull request #321 from njbair/master
+| |\  
+| | * d526de82f31f474c4058fefc8d3bb321aed68deb Nick Bair - Clean up wording in keymap example
+| | * 0bb3dbb337b04b72beba37f3cd5fe8ae3ce11354 Nick Bair - Clarify layer precedence
+| | * d915c75a54fc4f366b979441837fc67965d99c9d Nick Bair - clarify layer documentation
+| * | f08a6567c01776a45184bd1c930607fb12b3dfac tmk - core: Fix media/consumer keys
+| |/  
+| * 72070d48e0836a5557cdf0c9b30f307192ec515b tmk - ps2_usb: Fix for VUSB configuration
+| * c8e45b52a5aecec58f6ceadd126bc33a34d3b3d0 tmk - core: Actionmap support
+|/  
++ d4b8e68a5387b7e3c8f950ca2e1e2345cfb9e101 tmk - core: Fix chibios user compile options
+*   b85d4626a8bfd894f6e3f4173794da2fb5ef4292 tmk - Merge branch 'chibios' of https://github.com/flabbergast/tmk_keyboard into flabbergast_chibios
+|\  
+| + 8f2858918b9eb72079138fc0889b54a959f63476 flabbergast - Chibios: Revert common.mk change (fix AVR linking problem).
+| + ec9eff2e53bc0bce9c69d9a926c34ecc8d57c18c flabbergast - Chibios: cleanup usb_main code.
+| + 28c4665e7eb2812d2a3357a2231868abc14e7222 flabbergast - Chibios: Fix a HardFault bug (wait after start).
+* | de41aa11f72eaf323dc7920528e2c878d3f42a69 tmk - core: Fix ps2_mouse.c debug print
+* | d79d9251a9c9161b2b8a46e42bf891552e0a7282 obones - Removed duplicate debug message code and surrounded it with IFDEF as needed
+* | ee8c5baecc9acf37976de36f56551fc9e6b92968 Jun Wako - Remove warnings when NO_DEBUG is defined
+* | a71e6e0e4ffca4664447416ef650dcaf022a8dbc Fred Sundvik - Remove warnings when NO_PRINT is defined
+* | 97c7ed4de60ec73de7b5af7c0d66041c523d037a Jun Wako - Fix COMMON_DIR in common.mk.
++ | 08ce4c3021d2ecd446c5b9a137aded65423d241e Jun Wako - Add update for chibios in README
+|/  
+*   30cac1db009cc8a03fadb2ae557dd0c8c44f2134 tmk - Merge remote-tracking branch 'flabbergast-tmk_keyboard/chibios'
+|\  
+| + 3e688071bf770fc8266a408fde3fb0ea62d2d964 flabbergast - Chibios: add more guards for transmitting (fix a deadlock bug).
+| *   d01d959316f0bc78ee3424ccd5d6581fc42e972a flabbergast - Merge remote-tracking branch 'upstream/master' into chibios
+| |\  
+| + | 2525d5d90996d26f84e6b0b161159bb3b76fd349 flabbergast - Chibios: Update to new USB API.
+| * |   2fc5cd670068c764f218052307475d77772082de flabbergast - Merge branch 'master' into chibios
+| |\ \  
+| + | | a35cdea645e3c67f8dd1d64607e5cbf97ff36279 flabbergast - Chibios: add 'core/protocol' to the makefiles' search path.
+| * | |   5ed2fd62f387ae883112d27b2b3d26ea60d5b96e flabbergast - Merge remote-tracking branch 'upstream/master' into chibios
+| |\ \ \  
+| + | | | bbc4851916eed9ef321ed2be17edc7a490d82c2f flabbergast - Do timeout when writing to CONSOLE EP queue.
+| * | | | e47dc150b0f1f5944ae7c8938ab721717593a947 flabbergast - Workaround for compiler warnings when console disabled.
+| + | | | 4184c52d4ea904300ebe15a11b406fdfa0cfbb51 flabbergast - Add maple mini code.
+| * | | |   bef30897d7567613b5101155d7d0db88b66f77bb flabbergast - Merge branch 'master' into chibios
+| |\ \ \ \  
+| + | | | | 8e3a46018d03bc2a7f346f15f6ab8240348f2c2f flabbergast - Chibios: Remove the wait in the main loop.
+| + | | | | 7d41746d2a42c4c8dea714a4479b8475b2ca504b flabbergast - ChibiOS: prettify/document sleep_led code.
+| + | | | | 235cdee331bb177160a6dccc81c046a9703aaad4 flabbergast - ChibiOS: Update infinity bootloader code to match updated ChibiOS.
+| + | | | | 807bf1e80e8604c16ecab0be52e183ca43bf0ddf flabbergast - Chibios: Add breathing sleep LED on Kinetis MCUs.
+| + | | | | ba3bf7ce59714a36a0977e1719b5c2f5b7cbcc38 flabbergast - ChibiOS: make reset request more CMSISy.
+| + | | | | bf2ffd4a4e5cdbf9e3633e399e4f4d3ab510db03 flabbergast - Add correct chibios/bootloader_jump for infinity KB.
+| + | | | | f5e03fd792905e7627cc83033a073c3328ca0630 flabbergast - Chibios/usb_main: rename a variable for clarity.
+| + | | | | 63a330c9f947c476972fbe15346cfaa938c67657 Jun Wako - Fix drop key stroke
+| + | | | | d8f5b06afd9a9b9e35e37bf1f7b898324a8ad1bc Jun Wako - Fix report size of boot protocol.
+| + | | | | 38abb50d14d6cf6f71e76070930f22ae0b003140 flabbergast - ChibiOS/STM32: send remote wakeup.
+| + | | | | 6725650b88c4ddfc64d55304b72374af5f4aabd6 flabbergast - ChibiOS/kinetis: sending remote wakeup.
+| + | | | | 69f6e54436ad85fe581806e2f7c758844f8f86c4 flabbergast - Chibios: use WFI in idle. WIP suspend stuff.
+| + | | | | 02f044b3483330079d0420fdfd92ee2a1b64feef flabbergast - Move chibios/cortex selection to local Makefiles.
+| + | | | | fa59dfa8a1fa92104de373f2433453e48f6dba53 flabbergast - Rename chibios example keyboard.
+| + | | | | 5c060de189757877c6756ac6fe218ae6fb666b7d flabbergast - Add eeprom support for chibios/kinetis.
+| + | | | | efd00447918aadbfc31989a9a3ba78688d3839b3 flabbergast - Move declaration of keymap_config.
+| + | | | | 7196b24c8e659e86abaa0c1e15152e181cf6b236 flabbergast - Make bootmagic.c code portable (_delay_ms -> wait_ms).
+| + | | | | 37b15b20458f8a4ffdfcaaff49b7a68994865e73 flabbergast - Add missing #include to keymap.c.
+| * | | | |   31316e30230fd7d6ef8f40f92ed75137d16f0b68 flabbergast - Merge branch 'master' into chibios
+| |\ \ \ \ \  
+| + | | | | | 166f3123b9cbcd9a6c9a86133cf9f75557188ca8 flabbergast - Fix chibios/usb_main GET_REPORT handing.
+| + | | | | | 57ac6c21a0d9d16942cf0f8ca2131274535c1f56 flabbergast - Add ARM Teensies bootloader code.
+| + | | | | | 1758086d6c7cba9857416190298262c36be419c3 flabbergast - Move STM32 bootloader address config to separate .h file.
+| + | | | | | 03bb026b2531e43c6086fd912486111228db8be7 flabbergast - Rename some Makefile defines.
+| + | | | | | 76ba6ac3752e5c15d10a7dcfccfd6a2877349a27 flabbergast - NKRO fixes.
+| + | | | | | 06498f8915ef387acb06fe9a0d702c24d6f3cc9e flabbergast - Update chibios README.
+| + | | | | | db0a4f588ff27ac2e5c523dc0675aa034176619e flabbergast - Add basic sleep_led for chibios.
+| + | | | | | c3f930ef69189f8c8a7898e1eb7948d85783a4b1 flabbergast - Move AVR specific sleep_led.c into avr.
+| + | | | | | 40694941304646bbe54f5e5b0a87dca8be2435e1 flabbergast - Fix bootloader-jump compiling.
+| + | | | | | 9117f7b44d87a44583880b16c97984e00a280986 flabbergast - Small updates.
+| + | | | | | 269cb8553700d37c1afd683440f6a80e353d464f flabbergast - Implement jump-to-bootloader.
+| + | | | | | 7e81b34a0f924a47d21a39dd2344e5e052248daa flabbergast - Move chibios to tool.
+| + | | | | | 923a892ba551d2461c518ab359f5576f12115db1 flabbergast - Make usb_main more USB_DRIVER #define independent.
+| + | | | | | aa054f0eb6b85f3303c792a86bf75af44a6f3947 flabbergast - Add ChibiOS support (USB stack + support files).
+| * | | | | | 1e3e2822599f600baf448055335c7aafe25e8052 flabbergast - Modularity and gcc warnings fixes.
+|  / / / / /  
+* | | | | | f218a3898995de77996373a5298ba22511c80717 tmk - core: Remove unused warning. Fix tmk_keyboard/#293
+* | | | | | cecc8070353388214c543383682b9a7ac60f897a Kai Ryu - core: Speed up compilation
+| |_|_|_|/  
+|/| | | |   
+* | | | |   8ff12aee6757de091d6073b5388d75288d6dba84 tmk - Merge pull request #230 from jerryen/master
+|\ \ \ \ \  
+| * | | | | 2f60ce039ee6fd36d96a752f3d7498f56737211a jerryen - Add KEYBOARD_LOCK_ENABLE to makefile
+|  / / / /  
+* | | | | 3afb83d554aaf878df0e7d2b0519a8db7d839bc5 tmk - core: Add note about sudo and git
+| |_|_|/  
+|/| | |   
+* | | | 6f5511a73cab91f2b5121d3e3a37b9d226cdfa29 tmk - core: Fix variable initialize
+* | | | 02a15fa2846ce92c8cad702570e5015480c7e138 tmk - core: Fix variable init and header include
+* | | |   1833ca156fb3eef3dd34f08c9477c04a1706ee81 tmk - Merge pull request #292 from obones/command_warning
+|\ \ \ \  
+| * | | | 2fc9ae4f216e189ee9a3b9fac50b9643b8e911bf obones - host_driver is only used if KEYBOARD_LOCK_ENABLE is defined
+| | |_|/  
+| |/| |   
+* | | |   bc9dc6fab9b2fce2b796f2f57ccf1543e089daac tmk - Merge pull request #294 from shayneholmes/fix-debug-message
+|\ \ \ \  
+| * | | | 984accbec96a2d802ec2751514923b6e5df5a477 Shayne Holmes - Fix typo in bootmagic debug message
+| |/ / /  
+* | | |   c1b891bc2a4aece72539438cef272955c7d1d298 tmk - Merge pull request #295 from doopai/master
+|\ \ \ \  
+| * | | | 4b99fedff171c9918e6b454227423b0fe9e101be duanhongyi - remove  SERIAL_SOFT_DEBUG macro
+| |/ / /  
+* | | | 1da837c05bb5a7d8baf8a524e15f708cacbb25f5 tmk - core: Add macro commands SM(), RM() and CM()
+* | | | d9d5a9336c5c7b9f8b63857c211755c97a512c33 Adrian L Lange - Add support for storing, restoring and clearing modifiers in macros
+* | | | 4f371c02abf42e96b79e43da7f652d8c2963649d tmk - core: Add dfu-programmer example to doc/build.md
+* | | | ba3792e6a97ae3b14ec11104ea5710dd6eef9b97 tmk - core: Fix doc/build.md
+* | | | 67a7ea1690ea9579e6cf63f1707e52d983f7e17e tmk - usb_usb: Fix for keymap editor
+|/ / /  
+* | | 2450559ea9fdf5efa3caa87beb19bde3cd0af906 Howard P. Logsdon - Remove an errant comma trailing the KC_ERAS macro alias
+* | |   8465747ba7894604882cba2f18a960e150f389ee tmk - Merge pull request #270 from jeffgran/single-tap-toggle
+|\ \ \  
+| * | | 83607d97f98548898029ded3fd0fdd11272e9bc8 Jeff Gran - enable TAPPING_TOGGLE=1 to work correctly
+| | |/  
+| |/|   
+* | |   a37339a825f8e99b9ae2d69b793be27c82d3abdb tmk - Merge pull request #271 from jeffgran/default-layer-toggle
+|\ \ \  
+| * | | 26dacf48eb34da81d94978958b6edb1982fcd28f Jeff Gran - add ACTION_DEFAULT_LAYER_TOGGLE to toggle a default layer on/off
+| |/ /  
+* | | 8e732f7833ad9321004bfa0857842d51fefd0564 tmk - core: Update doc/build.md and remove other_projects.md
+* | | b555238c11d2720c46cc838117ed12dd084d64c5 tmk - core: Fix rules.mk for dfu target
+|/ /  
+* | f7a55fd70d2af2d230a6de4467b6f322bada3e3c tmk - core: Fix debug print of usb_hid
+* | 1402f7d48af3cfe5e288e88a7d33a964af96cf0e tmk - core: Add keycode KC_JPY for JIS
+|/  
+*   57d27a8e39173a589b4abae74851f95c39940174 Jun Wako - Merge branch 'core_update_150924' into core
+|\  
+| * 024abe3d72d8983a939df24254b3d79adabf969a Jun Wako - core: Fix NKRO ifdef
+| * 7aa2d3013d905e9f8b9cddcb3c55c70e9cb3edda tmk - core: Fix for disabling NKRO in Boot protocol
+| * 95651fd6864c6f5b28d2c48a872bde2d6431096d tmk - core: Fix message print of debug command
+| * c20cd29335fab10192da9da35b98749e70a7fd60 tmk - lufa: Fix endpoint bank mode for ATMega32u2
+| * 82ac21f3656b24f6668ea25e7701b706d7ef7467 tmk - next_usb: Fix next_kbd_set_leds()
+| * 537d9c7f90244a4e93cd80abed966af0f3270eea tmk - Change to KC_BOOTLOADER(KC_BTLD)
+| * f2b377207a4f5d85765e181348fd3ffa82e8df9b skullY - Add an assignable RESET key
+| * fc99257fdb2ba203ead09136e9054e28f10eca95 tmk - Fix parenthesis
+| * e852582d8b640ffa27e69ab4c2896afdb916a747 tmk - Fix weak modifier clear in action macro
+* d18d42e78b2bf4a61109897f53507eb399cb61e1 Jun Wako - Merge branch 'core-update2' into core

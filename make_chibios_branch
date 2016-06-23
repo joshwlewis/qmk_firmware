@@ -1,0 +1,21 @@
+#!/bin/bash
+CHERRY="git cherry-pick -X subtree=tmk_core"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PYTHON=/"c/python27/python"
+
+git rev-parse --verify qmk_chibios_automatic
+if [ $? != 0 ]
+then
+	echo "does not exist"
+	git checkout -b qmk_chibios_automatic fa33719adab1393753312d298b8c365e04e844b9
+fi
+
+git checkout qmk_chibios_automatic
+git reset --hard fa33719adab1393753312d298b8c365e04e844b9
+$PYTHON "$DIR/parselog.py" "$DIR/chibios.log" | xargs -t -n1 $CHERRY
+git show c9a56f9a8592e1389de4857a93a84a324b02e426:protocol/chibios/README.md > tmk_core/protocol/chibios/README.md
+git add tmk_core/protocol/chibios/README.md
+git cherry-pick --continue
+$PYTHON "$DIR/parselog.py" "$DIR/chibios2.log" | xargs -t -n1 $CHERRY
+
+

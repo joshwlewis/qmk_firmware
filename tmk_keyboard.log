@@ -1,0 +1,608 @@
+*   5c277a6687b63f34e5d5696365a2ed88e48441f2 tmk - Merge branch 'remote_wakeup_32u2_fix'
+|\  
+| * a65fa6437c0187766d59d3d939ebbc3c001b5b05 tmk - core: Fix USB remote wakeup on ATmega32U2 #361
+|/  
+*   338744ba2fdfdcd07824f325a8112e041d6cd0a5 tmk - Merge branch 'usb_usb_multiple_keyboard_share'
+|\  
+| * 148c6a517549973a622f7df91f95e525550cd520 tmk - usb_usb: Add multiple keyboard support
+|/  
+* 60b88f155ec0c4150a541cba19db50a5db72a18d tmk - hhkb: Fix links in README.md. Close #358
+*   ccd8e1860932af5c8d6d5c224a07d28b778863a4 tmk - Merge branch 'report_descriptor_fix'
+|\  
+| * 7ce326dee5f5ae6dc558356a79c58f8d4c150fe0 tmk - core: Fix Logical Maximum in report descriptor
+|/  
+*   df1e5a5aab8cab93463094e1ca0606f3e96af5b4 tmk - Merge branch 'report_descriptor_fix'
+|\  
+| * 279876ef5e7d20bffaaa727fdca3a8fa15017781 tmk - core: Fix LUFA report descriptor
+|/  
+*   f37805e698a34ce07f10c7f5316f9bbd2a63563b tmk - Merge pull request #355 from papodaca/XT
+|\  
+| * bafb746485aab5756a5b4877ec5bbe637f72f4ba Ethan Apodaca - Update XT converter readme.
+| *   83331cf6a27d3ef7d35c2e707a61a83d88f125dd Ethan Apodaca - Merge pull request #1 from alh84001/patch-1
+| |\  
+| | * 5cbc226addd2983076aae47611491c96b92d0344 Matija Kovacic - Update config.h
+| |/  
+| * a9bce90c6090803a728592ae7ea563e2f3286e38 Ethan Apodaca - Mostly working. Is unstable, will emit bad codes after a while.
+| * 3def1c3065a3b1f85a99cc7336f41f486d9ec67d Ethan Apodaca - Codes appear to be detected correctly, the break codes are broken.
+* |   1bce71fbf7874cc0169860cd0b6f1a59fdec9993 tmk - Merge branch 'adb_mediakey'
+|\ \  
+| * | b653b622a623f0e8e2c03af8254e6ac3d29b71c7 tmk - adb_usb: Add support for Apple Adjustable keybaord media keys
+| * | 230ed4bdef855202a4c340fe645f05e2ca124521 tmk - core: change API of adb.c to accept device address
+|/ /  
+* | 4d9e66baeccc130f5263460f8e1228bb85cb92c7 tmk - adb_usb: Fix swap ISO codes bug
+* |   3fe8e1c238fc8e15dacda1b03c0c1745a7b8e8e7 tmk - Merge commit '20b787fc1284176834cbe7ca2134e4b36bec5828'
+|\ \  
+| * \   8da189851ba83b9bb46a4290cd76b7b7fef6134e Jun Wako - Merge remote-tracking branch 'flabbergast/chibios'
+| |\ \  
+| | * | f0fdd8a7aec8016e1165175ca28f65fa3294ad95 flabbergast - ChibiOS: update instructions.md.
+| | * | 24dd0b5dbd1f2ac93fc68ceaad298878b5be7da0 flabbergast - ChibiOS: update mk to match chibios/master.
+| | * |   cdee2669c42ffe520c192967ee911cbd56f63e96 flabbergast - Merge branch 'develop' into chibios
+| | |\ \  
+| | |/ /  
+| |/| |   
+| * | | 221663cab0623ffffbdd761ba6bdd978f9d2bf45 Jun Wako - Fix signatre of layer state change hooks
+| * | |   5a364cbcb7a96735d97a4e2a92e09b9270640c12 Jun Wako - Merge branch 'hotfix-chibios' into develop
+| |\ \ \  
+| | * | | b71512970acd85db2d80d36b679efb016b0355e4 flabbergast - Chibios: add default location for chibios-contrib.
+| * | | |   af664cd35929dd629c43791207f0baab9d91be44 Jun Wako - Merge branch 'newapi' into develop
+| |\ \ \ \  
+| | * | | | 04feeaaf2fbdb19be8cd776aa3cc1a2bf9fab1b1 Jun Wako - Clean hook codes
+| | * | | | 0ca106d02c834aacf9abc833437d6324d671bb82 Jun Wako - Fix code and table in hook.txt
+| | * | | | 714d418601d293811a3192ee7c90878df23c6dbb Jun Wako - Add hook document from njbair's work
+| | * | | |   fb3a323c8ca56a5dc6d292887a617b70edd23ac1 Jun Wako - Merge branch 'master' into newapi
+| | |\ \ \ \  
+| | | |/ / /  
+| * | | | |   8b7fbbd3696bfa5e9e65d6fa3adccd7c8a2e9d85 Jun Wako - Merge branch 'master' into develop
+| |\ \ \ \ \  
+| | | |/ / /  
+| | |/| | |   
+| | | | * | e49851aac0ea25d646375f7a0657ec2bde857c02 flabbergast - Chibios: add default location for chibios-contrib.
+* | | | | |   57f0ab5563aff4c4801241fa25bb4b7a7129ed6c tmk - Merge branch 'flabbergast-update'
+|\ \ \ \ \ \  
+| * | | | | | 82e8e6fbaad8636118f2439996efcff23aa91c22 flabbergast - Chibios: update examples to current chibios git.
+|/ / / / / /  
+* | | | | | e661296200233c2c721be857d551644324793536 tmk - core: Add comment of register 3 of ADB
+* | | | | |   41d8811c3576475fde835e4d1b44ad212bd5d22b tmk - Merge branch 'adb_iso_fix'
+|\ \ \ \ \ \  
+| * | | | | | 4fc0efd3ab8f1720eb799e29ef436a3788aa1890 tmk - adb_usb: reinitialize for plug-in after startup
+* | | | | | |   f43a2df7614503708818c258439d3a7c90d65e95 tmk - Merge branch 'adb_iso_fix'
+|\ \ \ \ \ \ \  
+| |/ / / / / /  
+| * | | | | | 49f44a2aedce6d727d9e6aa7998e766b899c6eda tmk - adb_usb: autodetect ISO keyboards and swap codes
+| * | | | | | d702fe7504753617911501d886c4e4e0a33d607f tmk - core: Add adb_host_talk()
+|/ / / / / /  
+* | | | | |   75854878cc77ebefd82e56886796c7b5b3294106 tmk - Merge pull request #347 from omenlabs/master
+|\ \ \ \ \ \  
+| * | | | | | d5d58f566dca3c671eee81d47f6083a94a165ba8 John Hickey - Make Bell and Click work on Sun Type 5c.
+| * | | | | | d3332d32daacde13cb0ff488d1c1dd0f79a3d423 John Hickey - Add hardware serial support for sun_usb converter
+|/ / / / / /  
+* | | | | |   e9a54995bd5af53ce54d71ca4528f976d29074e9 tmk - Merge pull request #341 from esell/master
+|\ \ \ \ \ \  
+| * \ \ \ \ \   90105c6f8b886fb98bfecf023d735b6b30396f07 esell - Merge pull request #1 from esell/bluefruit
+| |\ \ \ \ \ \  
+|/ / / / / / /  
+| * | | | | | 0c8c77450cd0768c7b93aae8ce152a149fdb6935 esell - update macro names in bluefruit
+|/ / / / / /  
+* | | | | | 3c109203c3d0451dd5009acbe3fc5452934b0449 tmk - x68k_usb: Add toggle LED sample
+* | | | | | e7808f7ea4015dbed19f38a6dbbd82b0a3146fe6 tmk - x68k_usb: Convert legacy keymap into current one
+* | | | | | 7847d5dd9f3e743f298d1e7754c11dcfb7255382 tmk - news_usb: Add TMK converter support
+* | | | | | d4982a21ac8f3ba003da41ceb581bffb4e78fefa tmk - Fix a link in README.md
+* | | | | |   b1d691bcfdd3f30fc9d6e4aeecb1b620208991cd tmk - Merge branch 'master' of github.com:tmk/tmk_keyboard
+|\ \ \ \ \ \  
+| * \ \ \ \ \   38931d604f76e2158af79dbaf7f627f07a75d062 tmk - Merge pull request #327 from grettke/patch-1
+| |\ \ \ \ \ \  
+| | * | | | | | 0a0463aad2f1a96551ce32d33392f320895c6bb7 Grant Rettke - Extenal -> External
+* | | | | | | |   53bd4a01be5c4327462e6c6620ea7670eddca6f2 tmk - Merge commit '71381457fa1311dfa0b58ba882a96db740640871'
+|\ \ \ \ \ \ \ \  
+| |/ / / / / / /  
+|/| | | / / / /   
+| | |_|/ / / /    
+| |/| | | | |     
+| * | | | | |   d5c5ac63e60dfc6da6661a21bd968b4d577a27d5 Jun Wako - Merge branch 'develop'
+| |\ \ \ \ \ \  
+| | | |/ / / /  
+| | |/| | | |   
+| | * | | | | 3e290cd1efaef35afa4b33c2d4a765402911ce85 Jun Wako - Fix including board.mk in chibios.mk
+| | | |_|/ /  
+| | |/| | |   
+| | * | | |   32c69e099ef3814096de4f9cfb52f231bd02b91b Jun Wako - Merge branch 'newapi' into develop
+| | |\ \ \ \  
+| | | | |/ /  
+| | | |/| |   
+| | | * | | 01e33ea69a0016e6aa2af8df65b839181619b87b Jun Wako - Fix chibios and mbed common.mk for hook.c
+| | | * | | bea79d90603c3c25ef5bd72b849dd97e5374cf0c Jun Wako - hook: Change func name of usb events
+| | | * | | 3e97536a3412166f09a3fb251a70ad90e8e07775 Jun Wako - hook: Change file and func names(*_hook -> hook_*)
+| | | * | | c64e9aad86b98bb6badbb285ef6348990104a5a5 Jun Wako - hooks: Fix for LUFA
+| | | * | | 54e68b0973d76840326672ee3c06a6c4040f92ac Jun Wako - hooks: Remove led_restore_hook
+| | | * | | e73cfe5479c0ad9f8d204039d152e2ac44d4c116 Jun Wako - hooks: Fix for keyboard LED update
+| | | * | | e6120c50888efb640fd78e133a1361d6cf2cdd70 flabbergast - Implement basic hooks.
+| | * | | |   c9a56f9a8592e1389de4857a93a84a324b02e426 Jun Wako - Merge remote-tracking branch 'flabbergast/chibios' into develop
+| | |\ \ \ \  
+| | | * | | | 62b54019a16344b43e4153a31cf993c0f39cbb66 flabbergast - Chibios: disable LTO (link-time optimisation).
+| | | * | | | 325c09de38d178490374d91bdd17ad4dd8dea48d flabbergast - Chibios: make the default bootloader_jump redefinable (weak).
+| | | * | | | 078c72234d4775df94e1e05e2ab0630a606fae40 flabbergast - Chibios: fix STM32_BOOTLOADER_ADDRESS name.
+| | | * | | | 7c370e9bbde07196991f8ada61b05752fd4a2cc2 flabbergast - Chibios: Update the main chibios README.
+| | | * | | | 7f0198d86be549485c3aa3c9cbcef8c6acb0f197 flabbergast - Chibios: implement sleep LED for STM32.
+| | | |/ / /  
+| * | | | |   59576822bb5e262a3f71fcc1035b3b8085d0362a Jun Wako - Merge branch 'hotfix-mediakey'
+| |\ \ \ \ \  
+| | * | | | | 915eb488b6f05335189751a0cc1aa7f150e5ff7b tmk - core: Fix media/consumer keys
+| | |/ / / /  
+| * | | | |   a478c62c9cdd72ac59d867ce013ee2a833267659 Jun Wako - Merge branch 'hotfix-vusb'
+| |\ \ \ \ \  
+| | * | | | | 88f90f32bd5f68767ac889265df3293a2dab5ea3 tmk - Fix for VUSB configuration
+| | |/ / / /  
+| * | | | |   cccebfe51fb1e6dc281e0931ccd66e75fa1e3aa1 Jun Wako - Merge branch 'njbair-docfix'
+| |\ \ \ \ \  
+| | |/ / / /  
+| |/| | | |   
+| | * | | | 0aaab57f559fd85180de17dd70fa8fa3318a4776 Nick Bair - Clean up wording in keymap example
+| | * | | | dc8bbc3d5d8b56778319c5088811459efab5defc Nick Bair - Clarify layer precedence
+| | * | | | 9e0b4c14681daf56c0d604e5cebdf2eb62cbf7ab Nick Bair - clarify layer documentation
+| |/ / / /  
+| * | | |   c286d8cb43ab0573c09be0ee782a93f4d4bf86cb tmk - Merge pull request #10 from fredizzimo/chibios-contrib2
+| |\ \ \ \  
+| | |/ / /  
+| |/| | |   
+| | * | | 062d74ed9c709f6b8b2c02f8a7e8ef34b6b836e6 Fred Sundvik - Update ChibiOS instructions
+| | * | | d47150f911b3f56446909afeb20f199e857ce8b6 Fred Sundvik - Add support for new version of ChibiOS and Contrib
+| |/ / /  
+| * | | afef9b4abd5ce5cb44387ffadde3279fedee1342 Jun Wako - Fix hard-coded path of CHIBIOS
+| * | |   95c5b1907356cbd48c04e992338f3c813e19d85b tmk - Merge pull request #7 from fredizzimo/sysvsize
+| |\ \ \  
+| | * | | 27128a83122efc228c88fe26c2a945d157f4a2d2 Fred Sundvik - Sysv format for ChibiOS arm-none-eabi-size
+| |/ / /  
+| * | | d4b8e68a5387b7e3c8f950ca2e1e2345cfb9e101 tmk - core: Fix chibios user compile options
+| * | |   b85d4626a8bfd894f6e3f4173794da2fb5ef4292 tmk - Merge branch 'chibios' of https://github.com/flabbergast/tmk_keyboard into flabbergast_chibios
+| |\ \ \  
+| | * | | 8f2858918b9eb72079138fc0889b54a959f63476 flabbergast - Chibios: Revert common.mk change (fix AVR linking problem).
+| | * | | ec9eff2e53bc0bce9c69d9a926c34ecc8d57c18c flabbergast - Chibios: cleanup usb_main code.
+| | * | | 28c4665e7eb2812d2a3357a2231868abc14e7222 flabbergast - Chibios: Fix a HardFault bug (wait after start).
+| * | | | de41aa11f72eaf323dc7920528e2c878d3f42a69 tmk - core: Fix ps2_mouse.c debug print
+| * | | | d79d9251a9c9161b2b8a46e42bf891552e0a7282 obones - Removed duplicate debug message code and surrounded it with IFDEF as needed
+* | | | | 7613efca999f1b0b90c57cedfa67eda1161b8d44 tmk - adb_usb: Fix for ISO swapped keys(issue #35)
+| |_|/ /  
+|/| | |   
+* | | | 5a2a781fc9ef32ffd80626dddede12b8d49cc138 tmk - next_usb: Stop debug print while no keyboard
+* | | | e3994a620b430df62ca675d433be8a11a79ba7f3 tmk - x68k_usb: Change config for TMK converter
+* | | |   79afcd55709f67c028570f294ecd1c5efdedadc8 tmk - Merge pull request #321 from njbair/master
+|\ \ \ \  
+| * | | | b17d2d176c2ba3460cf101d3b45b24653a952955 Nick Bair - Clean up wording in keymap example
+| * | | | fd4d342568d613438879efdd9e3151f06d75c5f5 Nick Bair - Clarify layer precedence
+| * | | | 336a27e91dd0b85d6a2d921a1d58807bd4f77451 Nick Bair - clarify layer documentation
+* | | | | 532e85075184ad6d99e83959e2783b0c2858d779 tmk - hhkb: Add Makefile.rn42.jp
+* | | | | 1414ea35315a4bb867e031d0b085f1a966fbeabf tmk - hhkb: Fix name of consumer keys
+* | | | | 24cee117d0abe1e8ba9a136f6908f10c30a11bb9 tmk - core: Fix media/consumer keys
+|/ / / /  
+* | | | 6527e1d98a3323aaa9ada032395b69128f11842b tmk - ps2_usb: Fix for VUSB configuration
+* | | | 882059c018a15e1dc64821d51015be8410bfbad5 tmk - alps64: Use keymap as default instead of actionmap
+* | | |   3349b6a56d9c3cece7eb66cf5fc0eea6047c826e tmk - Merge branch 'actionmap'
+|\ \ \ \  
+| * | | | 0ed5017640cfc6b3ace569f43011e881b4b5a996 tmk - alps64: Add actionmaps
+| * | | | 5e9b21d77d71bede3fbcbefd7567af22f3b0d153 tmk - core: Actionmap support
+| | |_|/  
+| |/| |   
+* | | | 81c3c1082a59c70236da56fbda505f1432cf27c6 tmk - alps64: Fix keymap(plain and editor)
+|/ / /  
+* | | 75ca495c010621699866a042e6a85061280177a7 tmk - ibm4704_usb: Fix scan code range for Alps 102-key
+* | | 449b31c18baaa4d051612dd5d3e6e379fc736016 tmk - mbed build workaround for #212
+* | | 1d9c939f388f9ceef8cd673155a4b2086cb5ad08 tmk - core: Fix chibios user compile options
+* | |   a3f29c973d99d31ccf704cd5832f4deb20a2e9aa tmk - Merge branch 'chibios' of https://github.com/flabbergast/tmk_keyboard into flabbergast_chibios
+|\ \ \  
+| * | | 803b65ea43b6b27d5c43af1705a7cbc87c87946b flabbergast - Chibios: Revert common.mk change (fix AVR linking problem).
+| * | | fa52d8ba7468a8bbb5754a5be1df249af7ecfece flabbergast - Chibios: cleanup usb_main code.
+| * | | fdf808ee24fe8cdfbad7d3f6db905489549564bb flabbergast - Chibios: Fix a HardFault bug (wait after start).
+* | | | 6360eb308c4b81d5effde77e9b0f357dd9673696 tmk - core: Fix ps2_mouse.c debug print
+* | | | 5a9953b46cee3b94e0db768288513193c8256802 obones - Removed duplicate debug message code and surrounded it with IFDEF as needed
+* | | |   524c7d133c57fd744906a0269189fe4bc979e894 tmk - Merge commit '657d9f23fe47fb88cf221adb23095082f191ba6a'
+|\ \ \ \  
+| | |/ /  
+| |/| |   
+| * | | ee8c5baecc9acf37976de36f56551fc9e6b92968 Jun Wako - Remove warnings when NO_DEBUG is defined
+| * | | a71e6e0e4ffca4664447416ef650dcaf022a8dbc Fred Sundvik - Remove warnings when NO_PRINT is defined
+* | | |   83a3de38b710d0eb5a752ffded6da2e8bf818b22 tmk - Merge commit '5a0132f1c1c9a14fd2941f0a5e29bbf5e31da20c' into master-core-pull
+|\ \ \ \  
+| |/ / /  
+| * | | 97c7ed4de60ec73de7b5af7c0d66041c523d037a Jun Wako - Fix COMMON_DIR in common.mk.
+* | | |   b47a88f4a5c3e054539f4113cdf13cf8d2c65545 tmk - Merge commit '28203e909e83b1ac6becb45a3eadae23b190df32' into master-core-pull
+|\ \ \ \  
+| |/ / /  
+| * | | 08ce4c3021d2ecd446c5b9a137aded65423d241e Jun Wako - Add update for chibios in README
+| | |/  
+| |/|   
+| * |   30cac1db009cc8a03fadb2ae557dd0c8c44f2134 tmk - Merge remote-tracking branch 'flabbergast-tmk_keyboard/chibios'
+| |\ \  
+| | * | 3e688071bf770fc8266a408fde3fb0ea62d2d964 flabbergast - Chibios: add more guards for transmitting (fix a deadlock bug).
+| | * |   d01d959316f0bc78ee3424ccd5d6581fc42e972a flabbergast - Merge remote-tracking branch 'upstream/master' into chibios
+| | |\ \  
+| | * | | 2525d5d90996d26f84e6b0b161159bb3b76fd349 flabbergast - Chibios: Update to new USB API.
+| | * | |   2fc5cd670068c764f218052307475d77772082de flabbergast - Merge branch 'master' into chibios
+| | |\ \ \  
+| | * | | | a35cdea645e3c67f8dd1d64607e5cbf97ff36279 flabbergast - Chibios: add 'core/protocol' to the makefiles' search path.
+| | * | | |   5ed2fd62f387ae883112d27b2b3d26ea60d5b96e flabbergast - Merge remote-tracking branch 'upstream/master' into chibios
+| | |\ \ \ \  
+| | * | | | | bbc4851916eed9ef321ed2be17edc7a490d82c2f flabbergast - Do timeout when writing to CONSOLE EP queue.
+| | * | | | | e47dc150b0f1f5944ae7c8938ab721717593a947 flabbergast - Workaround for compiler warnings when console disabled.
+| | * | | | | 4184c52d4ea904300ebe15a11b406fdfa0cfbb51 flabbergast - Add maple mini code.
+| | * | | | |   bef30897d7567613b5101155d7d0db88b66f77bb flabbergast - Merge branch 'master' into chibios
+| | |\ \ \ \ \  
+| | * | | | | | 8e3a46018d03bc2a7f346f15f6ab8240348f2c2f flabbergast - Chibios: Remove the wait in the main loop.
+| | * | | | | | 7d41746d2a42c4c8dea714a4479b8475b2ca504b flabbergast - ChibiOS: prettify/document sleep_led code.
+| | * | | | | | 235cdee331bb177160a6dccc81c046a9703aaad4 flabbergast - ChibiOS: Update infinity bootloader code to match updated ChibiOS.
+| | * | | | | | 807bf1e80e8604c16ecab0be52e183ca43bf0ddf flabbergast - Chibios: Add breathing sleep LED on Kinetis MCUs.
+| | * | | | | | ba3bf7ce59714a36a0977e1719b5c2f5b7cbcc38 flabbergast - ChibiOS: make reset request more CMSISy.
+| | * | | | | | bf2ffd4a4e5cdbf9e3633e399e4f4d3ab510db03 flabbergast - Add correct chibios/bootloader_jump for infinity KB.
+| | * | | | | | f5e03fd792905e7627cc83033a073c3328ca0630 flabbergast - Chibios/usb_main: rename a variable for clarity.
+| | * | | | | | 63a330c9f947c476972fbe15346cfaa938c67657 Jun Wako - Fix drop key stroke
+| | * | | | | | d8f5b06afd9a9b9e35e37bf1f7b898324a8ad1bc Jun Wako - Fix report size of boot protocol.
+| | * | | | | | 38abb50d14d6cf6f71e76070930f22ae0b003140 flabbergast - ChibiOS/STM32: send remote wakeup.
+| | * | | | | | 6725650b88c4ddfc64d55304b72374af5f4aabd6 flabbergast - ChibiOS/kinetis: sending remote wakeup.
+| | * | | | | | 69f6e54436ad85fe581806e2f7c758844f8f86c4 flabbergast - Chibios: use WFI in idle. WIP suspend stuff.
+| | * | | | | | 02f044b3483330079d0420fdfd92ee2a1b64feef flabbergast - Move chibios/cortex selection to local Makefiles.
+| | * | | | | | fa59dfa8a1fa92104de373f2433453e48f6dba53 flabbergast - Rename chibios example keyboard.
+| | * | | | | | 5c060de189757877c6756ac6fe218ae6fb666b7d flabbergast - Add eeprom support for chibios/kinetis.
+| | * | | | | | efd00447918aadbfc31989a9a3ba78688d3839b3 flabbergast - Move declaration of keymap_config.
+| | * | | | | | 7196b24c8e659e86abaa0c1e15152e181cf6b236 flabbergast - Make bootmagic.c code portable (_delay_ms -> wait_ms).
+| | * | | | | | 37b15b20458f8a4ffdfcaaff49b7a68994865e73 flabbergast - Add missing #include to keymap.c.
+| | * | | | | |   31316e30230fd7d6ef8f40f92ed75137d16f0b68 flabbergast - Merge branch 'master' into chibios
+| | |\ \ \ \ \ \  
+| | * | | | | | | 166f3123b9cbcd9a6c9a86133cf9f75557188ca8 flabbergast - Fix chibios/usb_main GET_REPORT handing.
+| | * | | | | | | 57ac6c21a0d9d16942cf0f8ca2131274535c1f56 flabbergast - Add ARM Teensies bootloader code.
+| | * | | | | | | 1758086d6c7cba9857416190298262c36be419c3 flabbergast - Move STM32 bootloader address config to separate .h file.
+| | * | | | | | | 03bb026b2531e43c6086fd912486111228db8be7 flabbergast - Rename some Makefile defines.
+| | * | | | | | | 76ba6ac3752e5c15d10a7dcfccfd6a2877349a27 flabbergast - NKRO fixes.
+| | * | | | | | | 06498f8915ef387acb06fe9a0d702c24d6f3cc9e flabbergast - Update chibios README.
+| | * | | | | | | db0a4f588ff27ac2e5c523dc0675aa034176619e flabbergast - Add basic sleep_led for chibios.
+| | * | | | | | | c3f930ef69189f8c8a7898e1eb7948d85783a4b1 flabbergast - Move AVR specific sleep_led.c into avr.
+| | * | | | | | | 40694941304646bbe54f5e5b0a87dca8be2435e1 flabbergast - Fix bootloader-jump compiling.
+| | * | | | | | | 9117f7b44d87a44583880b16c97984e00a280986 flabbergast - Small updates.
+| | * | | | | | | 269cb8553700d37c1afd683440f6a80e353d464f flabbergast - Implement jump-to-bootloader.
+| | * | | | | | | 7e81b34a0f924a47d21a39dd2344e5e052248daa flabbergast - Move chibios to tool.
+| | * | | | | | | 923a892ba551d2461c518ab359f5576f12115db1 flabbergast - Make usb_main more USB_DRIVER #define independent.
+| | * | | | | | | aa054f0eb6b85f3303c792a86bf75af44a6f3947 flabbergast - Add ChibiOS support (USB stack + support files).
+| | * | | | | | | 1e3e2822599f600baf448055335c7aafe25e8052 flabbergast - Modularity and gcc warnings fixes.
+| |  / / / / / /  
+| * | | | | | | f218a3898995de77996373a5298ba22511c80717 tmk - core: Remove unused warning. Fix tmk_keyboard/#293
+| * | | | | | | cecc8070353388214c543383682b9a7ac60f897a Kai Ryu - core: Speed up compilation
+| | |_|_|_|/ /  
+| |/| | | | |   
+| * | | | | |   8ff12aee6757de091d6073b5388d75288d6dba84 tmk - Merge pull request #230 from jerryen/master
+| |\ \ \ \ \ \  
+| | * | | | | | 2f60ce039ee6fd36d96a752f3d7498f56737211a jerryen - Add KEYBOARD_LOCK_ENABLE to makefile
+| |  / / / / /  
+| * | | | | | 3afb83d554aaf878df0e7d2b0519a8db7d839bc5 tmk - core: Add note about sudo and git
+| | |_|_|/ /  
+| |/| | | |   
+| * | | | | 6f5511a73cab91f2b5121d3e3a37b9d226cdfa29 tmk - core: Fix variable initialize
+| * | | | | 02a15fa2846ce92c8cad702570e5015480c7e138 tmk - core: Fix variable init and header include
+| * | | | |   1833ca156fb3eef3dd34f08c9477c04a1706ee81 tmk - Merge pull request #292 from obones/command_warning
+| |\ \ \ \ \  
+| | * | | | | 2fc9ae4f216e189ee9a3b9fac50b9643b8e911bf obones - host_driver is only used if KEYBOARD_LOCK_ENABLE is defined
+| | | |_|/ /  
+| | |/| | |   
+| * | | | |   bc9dc6fab9b2fce2b796f2f57ccf1543e089daac tmk - Merge pull request #294 from shayneholmes/fix-debug-message
+| |\ \ \ \ \  
+| | * | | | | 984accbec96a2d802ec2751514923b6e5df5a477 Shayne Holmes - Fix typo in bootmagic debug message
+| | |/ / / /  
+| * | | | |   c1b891bc2a4aece72539438cef272955c7d1d298 tmk - Merge pull request #295 from doopai/master
+| |\ \ \ \ \  
+| | * | | | | 4b99fedff171c9918e6b454227423b0fe9e101be duanhongyi - remove  SERIAL_SOFT_DEBUG macro
+| | |/ / / /  
+| * | | | | 1da837c05bb5a7d8baf8a524e15f708cacbb25f5 tmk - core: Add macro commands SM(), RM() and CM()
+| * | | | | d9d5a9336c5c7b9f8b63857c211755c97a512c33 Adrian L Lange - Add support for storing, restoring and clearing modifiers in macros
+| * | | | | 4f371c02abf42e96b79e43da7f652d8c2963649d tmk - core: Add dfu-programmer example to doc/build.md
+| * | | | | ba3792e6a97ae3b14ec11104ea5710dd6eef9b97 tmk - core: Fix doc/build.md
+| * | | | | 67a7ea1690ea9579e6cf63f1707e52d983f7e17e tmk - usb_usb: Fix for keymap editor
+| |/ / / /  
+| * | | | 2450559ea9fdf5efa3caa87beb19bde3cd0af906 Howard P. Logsdon - Remove an errant comma trailing the KC_ERAS macro alias
+| * | | |   8465747ba7894604882cba2f18a960e150f389ee tmk - Merge pull request #270 from jeffgran/single-tap-toggle
+| |\ \ \ \  
+| | * | | | 83607d97f98548898029ded3fd0fdd11272e9bc8 Jeff Gran - enable TAPPING_TOGGLE=1 to work correctly
+| | | |/ /  
+| | |/| |   
+| * | | |   a37339a825f8e99b9ae2d69b793be27c82d3abdb tmk - Merge pull request #271 from jeffgran/default-layer-toggle
+| |\ \ \ \  
+| | * | | | 26dacf48eb34da81d94978958b6edb1982fcd28f Jeff Gran - add ACTION_DEFAULT_LAYER_TOGGLE to toggle a default layer on/off
+| | |/ / /  
+| * | | | 8e732f7833ad9321004bfa0857842d51fefd0564 tmk - core: Update doc/build.md and remove other_projects.md
+| * | | | b555238c11d2720c46cc838117ed12dd084d64c5 tmk - core: Fix rules.mk for dfu target
+| |/ / /  
+| * | | f7a55fd70d2af2d230a6de4467b6f322bada3e3c tmk - core: Fix debug print of usb_hid
+| * | | 1402f7d48af3cfe5e288e88a7d33a964af96cf0e tmk - core: Add keycode KC_JPY for JIS
+| |/ /  
+* | | 5b8e4ca2c4c8c46a67d2fdaa2eba925faca91739 tmk - Change README for chibios
+| |/  
+|/|   
+* |   72b16683408810856e9d33b1f521ad6a15bf0699 tmk - Merge remote-tracking branch 'flabbergast-tmk_keyboard/chibios'
+|\ \  
+| * | 72c52d30c894b85e64861704e162ee3873661c7d flabbergast - Chibios: add more guards for transmitting (fix a deadlock bug).
+| * |   b1b30f167587349acbb7dc4f286a8742b8b63d00 flabbergast - Merge remote-tracking branch 'upstream/master' into chibios
+| |\ \  
+| * | | 5ef7d89406da5e3eda1196805dcc842787fa01cb flabbergast - Chibios: Update to new USB API.
+| * | |   ffbaeb7986b91bb5736e02412a6af6d198ad57d6 flabbergast - Merge branch 'master' into chibios
+| |\ \ \  
+| * | | | 58867094c489e09c79fb0d906f280e3f9db7cc5d flabbergast - Chibios: add 'core/protocol' to the makefiles' search path.
+| * | | | 1d6c6609e0f41f760a9eecaab1e19c76f99f9c52 flabbergast - Chibios: Tsy LC is cortex-m0plus.
+| * | | | 0998a9930dbdfe54add0245630fc6ff5297e5fa9 flabbergast - Chibios: update Teensy 3.x instructions.
+| * | | | b2a3a2653789908e0d5b4770f8ab89d6e8e1d050 flabbergast - Chibios: add makefiles for Teensy 3.x examples.
+| * | | | a47c3c733320c2c11fc1f7be6215f9a40787cdf1 flabbergast - Chibios: rename example stm32_onekey -> stm32_f072_onekey.
+| * | | | dbbd4e8f8d6bf04af4b778d2c8fd14d5417780c6 flabbergast - Chibios: updates for 3.0.4 git.
+| * | | |   8952d617ea489eed11b454abffc96cb286b1acbc flabbergast - Merge remote-tracking branch 'upstream/master' into chibios
+| |\ \ \ \  
+| * | | | | a75834ee98e94cea329aea224a4daaed1a4bf681 flabbergast - Do timeout when writing to CONSOLE EP queue.
+| * | | | | 1104dc0a4fcc9a78e1e9a71d8d9c2f7523d1c6f9 flabbergast - Add maple mini pinout pic.
+| * | | | | 7aab3bb21a3a62ce85a1f4b042508a335d6ed028 flabbergast - STM32F103x fixes.
+| * | | | | b110884a6d55a7d126e59a43e6481ca51c52e5e8 flabbergast - Workaround for compiler warnings when console disabled.
+| * | | | | f108623011a17c04de202fb13dccdda72893655f flabbergast - Add maple mini code.
+| * | | | | 39c0c27587a76e94996f2f17fef94c8b90c73bf6 Aurelien Bondis - Add generic STM32F103C8T6 example.
+| * | | | |   aa44c779ecec4ca569b2fa11ed41413515f62755 flabbergast - Merge branch 'master' into chibios
+| |\ \ \ \ \  
+| * | | | | | 41f5be3b7a145b71fdb14f6a6912d7fec874e515 flabbergast - Chibios: Remove the wait in the main loop.
+| * | | | | |   cee42dd0f62e1206e8d67d50e9d9509760af427d flabbergast - Merge remote-tracking branch 'upstream/master' into chibios
+| |\ \ \ \ \ \  
+| * | | | | | | df1b665a3cc5fdab60a0f6520a34d64da8f9f764 flabbergast - Infinity_chibios: improve comments.
+| * | | | | | |   59f37399f22b9767a83357990aca907c7dc8f596 flabbergast - Merge branch 'master' into chibios
+| |\ \ \ \ \ \ \  
+| * | | | | | | | c60dd8791808642420eea828b2217ec62fef0429 flabbergast - ChibiOS: prettify/document sleep_led code.
+| * | | | | | | | d3f4b01d220c55e60bea0e8fba27330c8adba903 flabbergast - ChibiOS: Update infinity bootloader code to match updated ChibiOS.
+| * | | | | | | | aef7a2973e223bbfc813c97b6244edc403051a55 flabbergast - Chibios: Add breathing sleep LED on Kinetis MCUs.
+| * | | | | | | | 44421f5bf4a15e0e0cfdcc18e9008fc242c5308a flabbergast - ChibiOS: make reset request more CMSISy.
+| * | | | | | | | 7524f5c9c334103510aeaecd312f955421e6c86a flabbergast - Infinity_chibios: select correct bootloader_jump.
+| * | | | | | | | 0914c583518b3d80b668d1bc6265c15c92642047 flabbergast - Add correct chibios/bootloader_jump for infinity KB.
+| * | | | | | | | 7c4a2fab6d78e2f59f477bf75690a12c233b0ea7 flabbergast - Chibios/usb_main: rename a variable for clarity.
+| * | | | | | | | 8bcddd24f7320344aba9c9e757be2a7d516f4faa Jun Wako - Fix drop key stroke
+| * | | | | | | | dcac43fa510eb5087a3b80d5654ffaa98fa471d4 Jun Wako - Add keymap_hasu.c
+| * | | | | | | | 1c5c9d94c809dba7a487f07814de4701565f9092 Jun Wako - Fix report size of boot protocol.
+| * | | | | | | |   054c86bfe88acb999478f0a7c648a774b8dde64f Jun Wako - Merge branch 'infinity_chibios' of ../tmk_chibios into infinity_chibios
+| |\ \ \ \ \ \ \ \  
+| | * | | | | | | | fd71b3f4eff1825d6527b1c657e88e2e3bd87483 Jun Wako - Add infinity_chibios
+| * | | | | | | | |   983d3be2da1231907aa735037b6b68717417b4a4 Jun Wako - Merge branch 'chibios' of https://github.com/flabbergast/tmk_keyboard into flabbergast-tmk_chibios
+| |\ \ \ \ \ \ \ \ \  
+| | * | | | | | | | | 6def1045305aaf9c539b5ebbe04232a4c83662ec flabbergast - ChibiOS/STM32: send remote wakeup.
+| | |/ / / / / / / /  
+| | * | | | | | | | 2e06ccf70a7f86e4abeaf5cec73886c909a2f7a9 flabbergast - ChibiOS/kinetis: sending remote wakeup.
+| | * | | | | | | | aa2c56823574b56735b81e5db08bd9c2ec501294 flabbergast - Update chibios/Teensy instructions.
+| | * | | | | | | | b25da7a51df91a73520df5f5120478438d84dad7 flabbergast - Update chibi/teensy instructions.
+| | * | | | | | | | c1c8e079ca78937096238f11f5ed6ee87cc743ef flabbergast - Chibios: use WFI in idle. WIP suspend stuff.
+| | * | | | | | | | c61210cfff21f88c25ad102dcd3afe58ce251c96 flabbergast - Add Teensy LC onekey example.
+| | * | | | | | | | 2b4066bb93ffda75dde58342a21c28878b6f50e6 flabbergast - Move chibios/cortex selection to local Makefiles.
+| | * | | | | | | | 9178ea2d73511786182317fe3e7b8ffc02cc3dc4 flabbergast - Rename chibios example keyboard.
+| | * | | | | | | | 2ac5cd730bf1578e9d593f83926a49b9053c4919 flabbergast - Add eeprom support for chibios/kinetis.
+| | * | | | | | | | cb663eeca6f5f2924974b4c6798a64489a5cdacc flabbergast - Move declaration of keymap_config.
+| | * | | | | | | | d9652cdf992baaa066f75866689ac50d2b37cb9f flabbergast - Make bootmagic.c code portable (_delay_ms -> wait_ms).
+| | * | | | | | | | cd7f30299a26dd32d19ef8ddd587eb8e1a5d4958 flabbergast - Add missing #include to keymap.c.
+| | * | | | | | | |   b388269407881b101c13cbeef68f84b714aa9dc9 flabbergast - Merge branch 'master' into chibios
+| | |\ \ \ \ \ \ \ \  
+| | * | | | | | | | | 3c08375616beed21b9882231795b2fd05ff4f3ad flabbergast - Fix chibios/usb_main GET_REPORT handing.
+| | * | | | | | | | | 19bb28d102b8c9b226aae38e2d8d9e53e574d6ec flabbergast - Add ARM Teensies bootloader code.
+| | * | | | | | | | | 88c053f78e24d9906c0f469ab1862a468044a376 flabbergast - Move STM32 bootloader address config to separate .h file.
+| | * | | | | | | | | 438559f11dba792630201d66a2b690760550c2e2 flabbergast - Rename some Makefile defines.
+| | * | | | | | | | | 1bcf15a8ea08b1728bc6caf27117a5ade0659a15 flabbergast - Add comments to chibi_onekey Makefile.
+| | * | | | | | | | | a24ddf3403670724b798d18e1d39bc3f0751aecf flabbergast - NKRO fixes.
+| | * | | | | | | | | 9540016b12f2182dc6ced530d2a9ab399a2b2ca1 flabbergast - Update chibios README.
+| | * | | | | | | | | 66b64efc3d5113f7909e43fa63da9bfdfce2d853 flabbergast - Add chibi_onekey example.
+| | * | | | | | | | | dc9fc9a7a457d44efc45f1dce51db3c5d4bc17c9 flabbergast - Add basic sleep_led for chibios.
+| | * | | | | | | | | 7d4f3dd5a148f922007f321a0bb61a571d5bbbc9 flabbergast - Move AVR specific sleep_led.c into avr.
+| | * | | | | | | | | 5248511209cb765c2548c7037801a8102c75f5a5 flabbergast - Fix bootloader-jump compiling.
+| | * | | | | | | | | 9cc281b4efdf2dcd817189bb8e633578d638bc45 flabbergast - Small updates.
+| | * | | | | | | | | d057e5157ed22508ce87f8fef113be52674ba209 flabbergast - Implement jump-to-bootloader.
+| | * | | | | | | | | 8152d279a4a4aa01f7d3f0a0a7b09e2081aa0d93 flabbergast - Move chibios to tool.
+| | * | | | | | | | | 1d115301d4134f59e8043a34400f08aac094704e flabbergast - Make usb_main more USB_DRIVER #define independent.
+| | * | | | | | | | | 27dec2db7bb33cc45b04b89b6855bac6b98de2e5 flabbergast - Add ChibiOS support (USB stack + support files).
+| | * | | | | | | | | be9be90483ce083490c11b1ae4695ec5149bc783 flabbergast - Modularity and gcc warnings fixes.
+* | | | | | | | | | | 99732d5acd64aa805fd9a5bf5d831377cbe3f6c7 tmk - ibm4704_usb: Fix README.md
+* | | | | | | | | | | 3730666b9788ce93a93185ef8ca76a5f5b770abd tmk - ibm4704_usb: Add Makefiles for TMK Converter
+* | | | | | | | | | | 5c89d73755e1b42420f6b52e659f9489bc833ce9 tmk - core: Remove unused warning. Fix tmk_keyboard/#293
+* | | | | | | | | | |   e76c8cafea0e1a0bf0544d7f990684aab4d3264f tmk - Merge pull request #299 from kairyu/speed-up-compilation
+|\ \ \ \ \ \ \ \ \ \ \  
+| |_|_|_|_|_|_|_|_|/ /  
+|/| | | | | | | | | |   
+| * | | | | | | | | | 42d5d64306e3d55d47f0e55d57b075ef1c0f1f52 Kai Ryu - core: Speed up compilation
+|/ / / / / / / / / /  
+* | | | | | | | | |   fb1fb122a5971723f374cd737b7cc0aefd470af3 tmk - Merge pull request #230 from jerryen/master
+|\ \ \ \ \ \ \ \ \ \  
+| * | | | | | | | | | 0c40b669f01a3bc63545d271b1fb05cf820f02e5 jerryen - Add KEYBOARD_LOCK_ENABLE to makefile
+* | | | | | | | | | | 5b820b9db890c7b82c78d2e29109ec521fdd0bc6 tmk - core: Add note about sudo and git
+| |_|_|_|_|_|_|_|/ /  
+|/| | | | | | | | |   
+* | | | | | | | | | 7694eb62ac108a049e037cfb6d2eac956fc08931 tmk - core: Fix variable initialize
+* | | | | | | | | | 325a99acd9c81f60519b6e594b2bf5d1e478ac56 tmk - core: Fix variable init and header include
+* | | | | | | | | |   b9edbb32e96fc1b6d1ecebcddc5e6e39fc15a728 tmk - Merge pull request #292 from obones/command_warning
+|\ \ \ \ \ \ \ \ \ \  
+| * | | | | | | | | | 66b6df0068b8a9ad9cd522ae2a32bc8d52aa35c9 obones - host_driver is only used if KEYBOARD_LOCK_ENABLE is defined
+| | |_|_|_|_|_|_|/ /  
+| |/| | | | | | | |   
+* | | | | | | | | |   cfcf5b2734e183700ebe82c55508ba78b381a0a5 tmk - Merge pull request #294 from shayneholmes/fix-debug-message
+|\ \ \ \ \ \ \ \ \ \  
+| * | | | | | | | | | 2a55b1d80532af1edfb02eabc33a746dc82f4312 Shayne Holmes - Fix typo in bootmagic debug message
+| |/ / / / / / / / /  
+* | | | | | | | | |   c36828e25e4b39947e80b8ca599ea91c2fee5a57 tmk - Merge pull request #295 from doopai/master
+|\ \ \ \ \ \ \ \ \ \  
+| * | | | | | | | | | c74eee6327c5995456ba004d70b9663cf485d9f8 duanhongyi - remove  SERIAL_SOFT_DEBUG macro
+* | | | | | | | | | | 8ccbbde881a7bd176ee64db3b11a6336d3b17a84 tmk - core: Add macro commands SM(), RM() and CM()
+* | | | | | | | | | | 5a196b64448dd0b8fe84e5960b7ed4111383b8eb Adrian L Lange - Add support for storing, restoring and clearing modifiers in macros
+* | | | | | | | | | | 6baca549b946033128a786ed4150de7644340d1f tmk - core: Add dfu-programmer example to doc/build.md
+* | | | | | | | | | | 0851cf926f63aeacc055ceaf72917f95068b49c0 tmk - core: Fix doc/build.md
+* | | | | | | | | | | 5611f94fb11096ecf13c463642d1e8c480d7fc2e tmk - usb_usb: Change matrix size 32x8 to 16x16
+* | | | | | | | | | |   47425d910b962d78245cdf5ff9d82ef6958e1dbf tmk - Merge branch 'usb_usb_editor'
+|\ \ \ \ \ \ \ \ \ \ \  
+| * | | | | | | | | | | 6382a9b5f4ab67522a0f373559db6c877dd4ca80 tmk - usb_usb: Fix for keymap editor
+* | | | | | | | | | | | c5d98f5c6f8c5c38b66ec386dbf204a0dea73f33 tmk - hhkb: Add note about RN42
+|/ / / / / / / / / / /  
+* | | | | | | | | | | 467602749dda5bcf8e2651b7407c07779fb5646c tmk - Fix fn_actions for keymap editor
+|/ / / / / / / / / /  
+* | | | | | | | | | 7d621aca7bcf34374e30ddfe79f0f16cf5caa26e tmk - m0110_usb: Add LED flash on startup
+* | | | | | | | | | c219570e54caed947882c26266a6b85ab9a3a493 tmk - adb_usb: Add LED flash on startup
+* | | | | | | | | | 310a39dd7617e27d53e8e7c0a0d0fbd0faff58e6 tmk - adb_usb: Change keycode PEQL to EQL(Fix #238)
+|/ / / / / / / / /  
+* | | | | | | | |   33714e55827d1cf52df1d3ff143f03fa34ad1f06 tmk - Merge pull request #278 from uxp/keycode_syntax_fix
+|\ \ \ \ \ \ \ \ \  
+| * | | | | | | | | 3dd8fb46276ccee869df82080a815160e2eea98c Howard P. Logsdon - Remove an errant comma trailing the KC_ERAS macro alias
+|/ / / / / / / / /  
+* | | | | | | | |   a5f289249b9b6cb6a30550f4dd7fbc12b93528a9 tmk - Merge branch 'master' of github.com:tmk/tmk_keyboard
+|\ \ \ \ \ \ \ \ \  
+| * \ \ \ \ \ \ \ \   6d144be8fddd1146f3c49551315efa82676d2477 tmk - Merge pull request #270 from jeffgran/single-tap-toggle
+| |\ \ \ \ \ \ \ \ \  
+| | * | | | | | | | | 81807dd2a61e63fbd6976bfc7235d770964866bc Jeff Gran - enable TAPPING_TOGGLE=1 to work correctly
+| | | |_|_|_|_|_|/ /  
+| | |/| | | | | | |   
+* | | | | | | | | |   03ef2cf2d7056821d6c1a47beda7599df6e7cdc7 tmk - Merge branch 'jeffgran-single-tap-toggle'
+|\ \ \ \ \ \ \ \ \ \  
+| |/ / / / / / / / /  
+|/| | | | | | | | |   
+| * | | | | | | | | d60a9b90488a8fee8e1d827b386c1641e5395c2e Jeff Gran - enable TAPPING_TOGGLE=1 to work correctly
+|/ / / / / / / / /  
+* | | | | | | | |   2d673dfabc7dbafb60dd340b5b9bc45d91715315 tmk - Merge pull request #271 from jeffgran/default-layer-toggle
+|\ \ \ \ \ \ \ \ \  
+| * | | | | | | | | 681464c0f7b7752badfaa685c94c88e395f7a176 Jeff Gran - add ACTION_DEFAULT_LAYER_TOGGLE to toggle a default layer on/off
+| |/ / / / / / / /  
+* | | | | | | | |   9c42227352646d00a8dc6e4eaa499bf5c1d97a9f tmk - Merge pull request #267 from riginding/master
+|\ \ \ \ \ \ \ \ \  
+| * | | | | | | | | e19d574b295199d32a99ebc592cdd0e5c690a2ad Ryan Riginding - add KC_MRWD and KC_MFFD to rn42
+| | |_|_|_|_|/ / /  
+| |/| | | | | | |   
+* | | | | | | | | 24c30681c42762aba3df96432078129e127bfd13 tmk - Remove doc/
+* | | | | | | | | 792327caac705e88de1f6b8cf43fb4b2fa2f7d40 tmk - core: Update doc/build.md and remove other_projects.md
+* | | | | | | | | 060c8c55f951c0dc6f07fc202046c8a4877dae58 tmk - adb_usb: Update README and Makefiles
+* | | | | | | | | d0f174911e84be47d0f3b3d98b7d1adeb38b5411 tmk - core: Fix rules.mk for dfu target
+| |/ / / / / / /  
+|/| | | | | | |   
+* | | | | | | | 2f3f17dba2065f92ce4e1ea7cd6351ee7357f968 tmk - usb_usb: Fix JIS keymap
+* | | | | | | | e5bad3f3b7187093e581696cafb7280ff517741c tmk - core: Fix debug print of usb_hid
+* | | | | | | | 706b2776464200a5723ac41d58ad7918d72460bb tmk - usb_usb: Add keymap of iso and of jis
+* | | | | | | | 6cd178ced98017ff59a7fe8cd94fd00fa9043023 tmk - core: Add keycode KC_JPY for JIS
+| |_|_|_|_|/ /  
+|/| | | | | |   
+* | | | | | | db2015a6b2d01c765dbd5ef2d13f160ab69965f4 tmk - hhkb: fix for keymap editor
+* | | | | | | 14a66a181ea6d300aab199cb121027d926fd6ab6 tmk - alps64: support for  keymap editor
+|/ / / / / /  
+* | | | | | fa33719adab1393753312d298b8c365e04e844b9 tmk - Add doc of HHKB original keycodes
+| |/ / / /  
+|/| | | |   
+* | | | | 6fe4af82fa21cbeb8e22c9f0630e5a908963cc13 tmk - Fix port setting of alps64/matrix.c
+| |_|/ /  
+|/| | |   
+* | | |   5ce9bf8353568b341b79b3cea676ea62a7d40442 Jun Wako - Merge commit 'fdc38ef3f92af7adeeb4de49550d8838c8a39b5c'
+|\ \ \ \  
+| | |_|/  
+| |/| |   
+| * | |   57d27a8e39173a589b4abae74851f95c39940174 Jun Wako - Merge branch 'core_update_150924' into core
+| |\ \ \  
+| | * | | 024abe3d72d8983a939df24254b3d79adabf969a Jun Wako - core: Fix NKRO ifdef
+| | * | | 7aa2d3013d905e9f8b9cddcb3c55c70e9cb3edda tmk - core: Fix for disabling NKRO in Boot protocol
+| | * | | 95651fd6864c6f5b28d2c48a872bde2d6431096d tmk - core: Fix message print of debug command
+| | * | | c20cd29335fab10192da9da35b98749e70a7fd60 tmk - lufa: Fix endpoint bank mode for ATMega32u2
+| | * | | 82ac21f3656b24f6668ea25e7701b706d7ef7467 tmk - next_usb: Fix next_kbd_set_leds()
+| | * | | 537d9c7f90244a4e93cd80abed966af0f3270eea tmk - Change to KC_BOOTLOADER(KC_BTLD)
+| | * | | f2b377207a4f5d85765e181348fd3ffa82e8df9b skullY - Add an assignable RESET key
+| | * | | fc99257fdb2ba203ead09136e9054e28f10eca95 tmk - Fix parenthesis
+| | * | | e852582d8b640ffa27e69ab4c2896afdb916a747 tmk - Fix weak modifier clear in action macro
+| |  / /  
+| * | | d18d42e78b2bf4a61109897f53507eb399cb61e1 Jun Wako - Merge branch 'core-update2' into core
+|  / /  
+* | | 77afc5a76f5d299d606ab5b6d870a40aee9cb0e3 Jun Wako - core: Fix NKRO ifdef
+* | | 79fd952da44df3414652faeb777437feeba70319 Jun Wako - ibm4704: Add keymap for Alps 102-key
+* | | ed9766a7d44cd727dbd59008eff4258745ff87cf tmk - core: Fix for disabling NKRO in Boot protocol
+* | | e8a4a63ec45cf5052d8a054182ab83fdbafc3ff6 tmk - core: Fix message print of debug command
+* | | bf3d4b3c06a0f379ce5f1112b5033faf1a69aeb6 tmk - lufa: Fix endpoint bank mode for ATMega32u2
+* | | 0b14b560063ac23de0132da9aae3cade68f7034e tmk - next_usb: Fix for mssing key event
+* | | c1f36042b4a09bf2357406b83d5c97a652d56bdb tmk - next_usb: Change LEDs usage for CapsLock status
+* | | 4fd703e9955356971d9610e05b734db860856382 tmk - next_usb: Change for TMK converter configuration
+* | | 276fc930165cebed4b8fde9ee6e0b3525e0032ca tmk - next_usb: Fix keymap
+* | | 9b99f8f8649c25b5efa92c9fd49b7f4c0ce60a76 tmk - next_usb: Fix next_kbd_set_leds()
+* | |   6147f5705ad2c5195a6363b4a1469230b424e489 tmk - Merge branch 'skullydazed-assignable_RESET'
+|\ \ \  
+| * | | 498654fc4c693c8a40e9285063797b9a6324ac18 tmk - Change to KC_BOOTLOADER(KC_BTLD)
+| * | | bb8c1d29fa123c430bccb5b8568d55a691bc1c81 skullY - Add an assignable RESET key
+* | | |   dc04983fd7905048c94366bce70f1288b323bfc9 tmk - Merge branch 'ibm4704_alps102'
+|\ \ \ \  
+| |/ / /  
+|/| | |   
+| * | | a63a9c7845c46b2b10a7a33b56001b89cbc93203 tmk - ibm4704: Add keymap for Alps models
+| | |/  
+| |/|   
+* | | a8d4daa7617c72cc32b5186271d4d35a7beffb82 tmk - Fix parenthesis
+* | | 0c21b263f9bc11e3999d7ea28e78d36663abf02c tmk - Fix weak modifier clear in action macro
+* | | 9f1d23bfe11d0a2db028ec2d585385094b80c098 tmk - Add Ateml toolchain and remove specific chip name
+|/ /  
+* | 455fd51a87693e8368a520730082fdc0a7c377eb tmk - Fix 'enable break' commands for Alps models
+* | 79cf2d59aeb53f47ddb665db0eb9366c4aa73057 tmk - Fix #239 unresponsive keys of HHKB JP during power saving
+* | 35203cad6ad4294409bd39dd85ff7858b353570d tmk - core: Fix lufa suspend callback(#234)
+* | d4220ac9f36209ba7e641f35181b41f84b9c98da tmk - hhkb: Add power saving code of matrix scan for JP
+* | 1efdd867c8f88ad779ad82e1b22df62bf6be8fe9 tmk - usb_usb: Ignore error usage(0x01-03) report
+* | 6f5e8ce17e89005130cd0f9ecc6e346a77bb624b tmk - usb_usb: Support locking key indicator LED
+* | e1e0e5b4fb4320e5f9512776912775fb9f589d4c tmk - onekey: Add V-USB build
+* | 5f06f26e03c0d0902e2466a0312ad4a5650a41af tmk - ps2_usb: Fix for V-USB build
+* | 448aa73c39155e2e9ce6abe2519620b392bb4bdd tmk - ps2_usb: Fix for mbed build
+* | 8746ad98ccc6ae56c8452afa6bef170777ea5b26 tmk - core: Add keymap section ldscript for ATMega32U2
+* | ce8b1e5f1347bb04ee26ef21c24aa52e8fdf23d7 tmk - m0110_usb: Change keymap and Makefile
+|/  
+* 507ebb34f5e7ca0eb2543f3c755ae39671a9b44c tmk - alps64: Change keymaps and USB descriptors.
+* 070a6be63808cdb6c4ec9e12ad708718cfdc3dfb tmk - Add description for non-US keys on keycode.h
+* a55160887322c5498f6a9b01bcc2e137e5e6cd51 tmk - sun_usb: LED update for hotplug keyboard into converter
+* 49b0c7e5ef1683f001c4c9e1c7516da8c5fe592e tmk - sun_usb: Fix LED status update at startup
+* 37af88217d62f22fd5d64a7b58285ce9a94d2176 tmk - sun_usb: Fix serial recv intrrupt trriger edge #228
+* fdce0c9cc0b7f8e9f1497cae3ea63a6672ceaf71 tmk - lufa: Fix console flush #223
+* 5b46031658a69104526ef43284acd943ba21b772 tmk - Revert "Make action_for_key a weak symbol"
+*   32abfacbc730be45ae5696688d9d8db3fb25dc01 tmk - Merge pull request #216 from DigitalBrains1/modelm101
+|\  
+| * 965110a0411bf64918ed8fd539139c00936ac9f5 Peter Lebbing - Add 101-key Model M terminal keyboard
+* |   63c07c9a0ff63a34c8c4868db6e34bcb6fee74db tmk - Merge pull request #217 from SaskatoonTechworks/tmk_core_action
+|\ \  
+| * | c17b8a599e3ec3b0a327bcd66082541f2517ab30 Dan McGregor - Make action_for_key a weak symbol
+|/ /  
+* |   81137b7a61ef11df023e1f542840a80bfc1ca090 tmk - Merge branch 'ibm4704_fix_protocol'
+|\ \  
+| * | 80fd3b0b240a8840fbca1cc3cc70e76f5b52b888 tmk - ibm4704_usb: Fix protocol handling
+| * | 6b588eb7f7893500e18686e673dbf12b511dc975 tmk - Add keyboard_setup() and matrix_setup()
+| * | 9a2282157fbdf57ef0a50d4fea7da72505906588 tmk - ibm4704_usb: Fix interrupt of clock(rising edge)
+|/ /  
+* | 6014d1014e96a7b484699d4dd8c04292c0233b0e Jun Wako - ps2_usb: Fix pin configuration
+|/  
+* 2d9e0d5cab534cf70471f6dd37f8e624354e67b3 tmk - ibm4704_usb: Add keymaps for 107 and 50-key
+* c01ecce137edf2283f028fe25d64d45b6510087f tmk - Revert "hhkb: Fix bug of matrix initialization for JP"
+* 8e7153d190b80757cb84994ecfad573914739204 tmk - hhkb: Change document
+* 1ed54a5dc9bf03a6daa9c1809701b277e3194970 tmk - adb_usb: Change README
+* a8822a16b4895e862cf26a3b64863fc082af2888 tmk - hhkb: Fix scan rate for HHKB JP #203
+* b085d762d5f151ce3f72d161ba2943862a02ca1e tmk - hhkb: Add build options
+* 81fe1fda6168dcbe989acef89c089e81dff6c4a5 tmk - hhkb: Change keymap
+* 177400b7e0932701a0d0f5d1c931b42907e3472f tmk - alps64: Change keymap
+* e86166c9043ec5bd3b418b569a58004c0b47d6cb tmk - adb_usb: Change keymap
+* 9a7eeb4918b947b933216c64fe257ef6385e2065 tmk - usb_usb: Fix keymap
+* b8fba54a20ef940565c1b443891d7c94a91cf1fb tmk - usb_usb: Change debug LED pin config
+* 67137a908aaf22fbd0509fbc127a092b9c0ff84f tmk - Reduce code size of magic commands
+* 192024124b65fb65a65b44eef0bbc308c5971cea tmk - Add description of AVR bootloader and boot section
+* 6057e915b53728f7b9d421b604c7c4654ca58743 tmk - usb_usb: Fix initialize procedure
+* f1f2066657f4a0998adc016c95d7e541b436e09f tmk - Merge commit 'f6d56675f9f981c5464f0ca7a1fbb0162154e8c5'
+* 1c73e574f109a17566db99e399bdf86007488d2a Jun Wako - Add compile options '-fdata-sections'
+*   663909772e36d965562b994679858e8b46ed3567 tmk - Merge branch 'mek-apelsin-lola'
+|\  
+| * 7780fd1c01182ab67d899b78d85a0d3b0d89196f Mekaniserad Apelsin - Add mouse support to ADB
+* | d9fee5571d7de08e76dff5ce75816faf522240f6 tmk - Merge commit '4d116a04e94cf0d19317d5b44e4fa9f34a3e5594'
+|/  
+* 55fc97f957555c20c4509e587e8fd2ef1194ab0d Jun Wako - Change mbed sdk path
+* a3d96d3aa96318d339a67de1085e0ae495d57c84 Jun Wako - Merge commit '1fe4406f374291ab2e86e95a97341fd9c475fcb8'
+* 1d5bac21dc6f1425b8ef4bbe7935330c37c3a93e Jun Wako - Fix README
+* 22dd5dae985c7ee0d0a04f02cdea474e9b099b07 tmk - Update for the latest mbed sdk
+* 1f4a22ee81ec1986d1ca190c78c66231d37b50e2 Jun Wako - Remove unneeded tap delays #201
+* 3f32b224788f9e938e41e02f6ad6fcbbec67479f Jun Wako - Fix URL of HID Usage Tables pdf
+* f9045bea6e5bc8534d4b80ba826d4aad7dc68551 Jun Wako - Fix typo of doc/keycode.txt
+* 7c3f14b7bbc155a74162a28c0eb82c3f4c39a54b Jun Wako - Fix handling of consumer usage #199
+*   4e50df476d2c9050a68b812a7cc1b847cf53070e Jun Wako - Merge branch 'mtharp-anti-ghost'
+|\  
+| * b52e29582aa591eb9abbf131981f750de56e3e21 Michael Tharp - Improve anti-ghosting behavior for fast typing
+|/  
+* bd24de44b71baa036d30da691f56f34744aa5fd5 Jun Wako - Fix dfu-programmer parameters
+* c412300536a5bb9f5224d00864150e9963d59ba8 Jun Wako - sun_usb: import dastels's keymap of Type 3
+*   c2485ebac51af53e96a86dccbf7c0540ce50e3ea Jun Wako - Merge branch 'ibm4704_ext'
+|\  
+| * e98b80072371ab0b4a2ffe573ddeec4b9c72aa8d Jun Wako - Move ring_buffer.h file
+| * d5482f29f46174bfa8854653f8a6cab5af97085e tmk - Fix debug print
+| * d42aa47809c97a77c49e9396201c2b5c3956bb54 tmk - Fix ibm4704 protocol with using interrupt
+| * 5ea50bfb30fa9917f6c1209a7ae7f31b7e7b4095 tmk - Add keymap codelet for 77-key and 107-key
+|/  
+* 799993c414416c8b23acfaf8f2701ea514d10080 Jun Wako - Update README
+* 79cfa894afbc0a94ac642f57de905d9afc068ce7 Jun Wako - Merge commit 'a20ef7052c6e937d2f7672dd59456e55a5c08296' into master_ng
+* 7860d09914dba5e7d2d6c1c25b62b49d1bbd2591 tmk - Change TMK_DIR setting
+* 1a02ebcc612e9a9c0d87e02295c7258de3a70ccc tmk - Merge commit 'a074364c3731d66b56d988c8a6c960a83ea0e0a1' as 'tmk_core'
+* 6746e37088ce8ba03529c1226bd216705edb2b1f tmk - Remove core library and build files

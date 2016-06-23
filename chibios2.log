@@ -1,0 +1,62 @@
+* 3097c9ec7fc67756e93bce3c0041653707bff19f Jun Wako - Fix function name in host.h
+*   836e209fdfc4b49215159294dda0d042d0f81984 Jun Wako - Merge branch 'core_split_160522'
+|\  
+| *   3918ea2e161e499b26e2a6e0a75390dfe6cd37af tmk - Merge commit '20b787fc1284176834cbe7ca2134e4b36bec5828'
+| |\  
+| |/  
+|/|   
+* |   8da189851ba83b9bb46a4290cd76b7b7fef6134e Jun Wako - Merge remote-tracking branch 'flabbergast/chibios'
+|\ \  
+| + | f0fdd8a7aec8016e1165175ca28f65fa3294ad95 flabbergast - ChibiOS: update instructions.md.
+| + | 24dd0b5dbd1f2ac93fc68ceaad298878b5be7da0 flabbergast - ChibiOS: update mk to match chibios/master.
+| * |   cdee2669c42ffe520c192967ee911cbd56f63e96 flabbergast - Merge branch 'develop' into chibios
+| |\ \  
+| |/ /  
+|/| |   
+* | | 221663cab0623ffffbdd761ba6bdd978f9d2bf45 Jun Wako - Fix signatre of layer state change hooks
+* | |   5a364cbcb7a96735d97a4e2a92e09b9270640c12 Jun Wako - Merge branch 'hotfix-chibios' into develop
+|\ \ \  
+| + | | b71512970acd85db2d80d36b679efb016b0355e4 flabbergast - Chibios: add default location for chibios-contrib.
+* | | |   af664cd35929dd629c43791207f0baab9d91be44 Jun Wako - Merge branch 'newapi' into develop
+|\ \ \ \  
+| * | | | 04feeaaf2fbdb19be8cd776aa3cc1a2bf9fab1b1 Jun Wako - Clean hook codes
+| * | | | 0ca106d02c834aacf9abc833437d6324d671bb82 Jun Wako - Fix code and table in hook.txt
+| * | | | 714d418601d293811a3192ee7c90878df23c6dbb Jun Wako - Add hook document from njbair's work
+| * | | |   fb3a323c8ca56a5dc6d292887a617b70edd23ac1 Jun Wako - Merge branch 'master' into newapi
+| |\ \ \ \  
+| | |/ / /  
+* | | | |   8b7fbbd3696bfa5e9e65d6fa3adccd7c8a2e9d85 Jun Wako - Merge branch 'master' into develop
+|\ \ \ \ \  
+| | |/ / /  
+| |/| | |   
+| | | + | e49851aac0ea25d646375f7a0657ec2bde857c02 flabbergast - Chibios: add default location for chibios-contrib.
+| | | | * 7f87b1199965a9fbed49403d13fead774f79d339 tmk - core: Add comment of register 3 of ADB
+| | | | * ef6478a4c2f7e9f06024fd7a46e58f7f9e119eb3 tmk - core: Add adb_host_talk()
+| | | | * 5c665b43f8ff403d20daf583c55880b8a51cbec0 esell - update macro names in bluefruit
+| | | | *   4f2c5bfee16124e25a0be41cb0be842e7ef7094d tmk - Merge commit '71381457fa1311dfa0b58ba882a96db740640871'
+| | | | |\  
+| | |_|_|/  
+| |/| | |   
+| * | | |   d5c5ac63e60dfc6da6661a21bd968b4d577a27d5 Jun Wako - Merge branch 'develop'
+| |\ \ \ \  
+| |/ / / /  
+|/| | | |   
+* | | | | 3e290cd1efaef35afa4b33c2d4a765402911ce85 Jun Wako - Fix including board.mk in chibios.mk
+| |_|/ /  
+|/| | |   
+* | | |   32c69e099ef3814096de4f9cfb52f231bd02b91b Jun Wako - Merge branch 'newapi' into develop
+|\ \ \ \  
+| | |/ /  
+| |/| |   
+| * | | 01e33ea69a0016e6aa2af8df65b839181619b87b Jun Wako - Fix chibios and mbed common.mk for hook.c
+| * | | bea79d90603c3c25ef5bd72b849dd97e5374cf0c Jun Wako - hook: Change func name of usb events
+| * | | 3e97536a3412166f09a3fb251a70ad90e8e07775 Jun Wako - hook: Change file and func names(*_hook -> hook_*)
+| * | | c64e9aad86b98bb6badbb285ef6348990104a5a5 Jun Wako - hooks: Fix for LUFA
+| * | | 54e68b0973d76840326672ee3c06a6c4040f92ac Jun Wako - hooks: Remove led_restore_hook
+| * | | e73cfe5479c0ad9f8d204039d152e2ac44d4c116 Jun Wako - hooks: Fix for keyboard LED update
+| * | | e6120c50888efb640fd78e133a1361d6cf2cdd70 flabbergast - Implement basic hooks.
+* | | |   c9a56f9a8592e1389de4857a93a84a324b02e426 Jun Wako - Merge remote-tracking branch 'flabbergast/chibios' into develop
+|\ \ \ \  
+| + | | | 62b54019a16344b43e4153a31cf993c0f39cbb66 flabbergast - Chibios: disable LTO (link-time optimisation).
+| + | | | 325c09de38d178490374d91bdd17ad4dd8dea48d flabbergast - Chibios: make the default bootloader_jump redefinable (weak).
+| + | | | 078c72234d4775df94e1e05e2ab0630a606fae40 flabbergast - Chibios: fix STM32_BOOTLOADER_ADDRESS name.
