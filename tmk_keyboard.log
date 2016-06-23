@@ -310,85 +310,85 @@
 | * | | f7a55fd70d2af2d230a6de4467b6f322bada3e3c tmk - core: Fix debug print of usb_hid
 | * | | 1402f7d48af3cfe5e288e88a7d33a964af96cf0e tmk - core: Add keycode KC_JPY for JIS
 | |/ /  
-* | | 5b8e4ca2c4c8c46a67d2fdaa2eba925faca91739 tmk - Change README for chibios
++ | | 5b8e4ca2c4c8c46a67d2fdaa2eba925faca91739 tmk - Change README for chibios
 | |/  
 |/|   
 * |   72b16683408810856e9d33b1f521ad6a15bf0699 tmk - Merge remote-tracking branch 'flabbergast-tmk_keyboard/chibios'
 |\ \  
-| * | 72c52d30c894b85e64861704e162ee3873661c7d flabbergast - Chibios: add more guards for transmitting (fix a deadlock bug).
+| + | 72c52d30c894b85e64861704e162ee3873661c7d flabbergast - Chibios: add more guards for transmitting (fix a deadlock bug).
 | * |   b1b30f167587349acbb7dc4f286a8742b8b63d00 flabbergast - Merge remote-tracking branch 'upstream/master' into chibios
 | |\ \  
-| * | | 5ef7d89406da5e3eda1196805dcc842787fa01cb flabbergast - Chibios: Update to new USB API.
+| + | | 5ef7d89406da5e3eda1196805dcc842787fa01cb flabbergast - Chibios: Update to new USB API.
 | * | |   ffbaeb7986b91bb5736e02412a6af6d198ad57d6 flabbergast - Merge branch 'master' into chibios
 | |\ \ \  
-| * | | | 58867094c489e09c79fb0d906f280e3f9db7cc5d flabbergast - Chibios: add 'core/protocol' to the makefiles' search path.
-| * | | | 1d6c6609e0f41f760a9eecaab1e19c76f99f9c52 flabbergast - Chibios: Tsy LC is cortex-m0plus.
-| * | | | 0998a9930dbdfe54add0245630fc6ff5297e5fa9 flabbergast - Chibios: update Teensy 3.x instructions.
-| * | | | b2a3a2653789908e0d5b4770f8ab89d6e8e1d050 flabbergast - Chibios: add makefiles for Teensy 3.x examples.
-| * | | | a47c3c733320c2c11fc1f7be6215f9a40787cdf1 flabbergast - Chibios: rename example stm32_onekey -> stm32_f072_onekey.
-| * | | | dbbd4e8f8d6bf04af4b778d2c8fd14d5417780c6 flabbergast - Chibios: updates for 3.0.4 git.
+| + | | | 58867094c489e09c79fb0d906f280e3f9db7cc5d flabbergast - Chibios: add 'core/protocol' to the makefiles' search path.
+| + | | | 1d6c6609e0f41f760a9eecaab1e19c76f99f9c52 flabbergast - Chibios: Tsy LC is cortex-m0plus.
+| + | | | 0998a9930dbdfe54add0245630fc6ff5297e5fa9 flabbergast - Chibios: update Teensy 3.x instructions.
+| + | | | b2a3a2653789908e0d5b4770f8ab89d6e8e1d050 flabbergast - Chibios: add makefiles for Teensy 3.x examples.
+| + | | | a47c3c733320c2c11fc1f7be6215f9a40787cdf1 flabbergast - Chibios: rename example stm32_onekey -> stm32_f072_onekey.
+| + | | | dbbd4e8f8d6bf04af4b778d2c8fd14d5417780c6 flabbergast - Chibios: updates for 3.0.4 git.
 | * | | |   8952d617ea489eed11b454abffc96cb286b1acbc flabbergast - Merge remote-tracking branch 'upstream/master' into chibios
 | |\ \ \ \  
-| * | | | | a75834ee98e94cea329aea224a4daaed1a4bf681 flabbergast - Do timeout when writing to CONSOLE EP queue.
-| * | | | | 1104dc0a4fcc9a78e1e9a71d8d9c2f7523d1c6f9 flabbergast - Add maple mini pinout pic.
-| * | | | | 7aab3bb21a3a62ce85a1f4b042508a335d6ed028 flabbergast - STM32F103x fixes.
-| * | | | | b110884a6d55a7d126e59a43e6481ca51c52e5e8 flabbergast - Workaround for compiler warnings when console disabled.
-| * | | | | f108623011a17c04de202fb13dccdda72893655f flabbergast - Add maple mini code.
-| * | | | | 39c0c27587a76e94996f2f17fef94c8b90c73bf6 Aurelien Bondis - Add generic STM32F103C8T6 example.
+| + | | | | a75834ee98e94cea329aea224a4daaed1a4bf681 flabbergast - Do timeout when writing to CONSOLE EP queue.
+| + | | | | 1104dc0a4fcc9a78e1e9a71d8d9c2f7523d1c6f9 flabbergast - Add maple mini pinout pic.
+| + | | | | 7aab3bb21a3a62ce85a1f4b042508a335d6ed028 flabbergast - STM32F103x fixes.
+| + | | | | b110884a6d55a7d126e59a43e6481ca51c52e5e8 flabbergast - Workaround for compiler warnings when console disabled.
+| + | | | | f108623011a17c04de202fb13dccdda72893655f flabbergast - Add maple mini code.
+| + | | | | 39c0c27587a76e94996f2f17fef94c8b90c73bf6 Aurelien Bondis - Add generic STM32F103C8T6 example.
 | * | | | |   aa44c779ecec4ca569b2fa11ed41413515f62755 flabbergast - Merge branch 'master' into chibios
 | |\ \ \ \ \  
-| * | | | | | 41f5be3b7a145b71fdb14f6a6912d7fec874e515 flabbergast - Chibios: Remove the wait in the main loop.
+| + | | | | | 41f5be3b7a145b71fdb14f6a6912d7fec874e515 flabbergast - Chibios: Remove the wait in the main loop.
 | * | | | | |   cee42dd0f62e1206e8d67d50e9d9509760af427d flabbergast - Merge remote-tracking branch 'upstream/master' into chibios
 | |\ \ \ \ \ \  
-| * | | | | | | df1b665a3cc5fdab60a0f6520a34d64da8f9f764 flabbergast - Infinity_chibios: improve comments.
+| + | | | | | | df1b665a3cc5fdab60a0f6520a34d64da8f9f764 flabbergast - Infinity_chibios: improve comments.
 | * | | | | | |   59f37399f22b9767a83357990aca907c7dc8f596 flabbergast - Merge branch 'master' into chibios
 | |\ \ \ \ \ \ \  
-| * | | | | | | | c60dd8791808642420eea828b2217ec62fef0429 flabbergast - ChibiOS: prettify/document sleep_led code.
-| * | | | | | | | d3f4b01d220c55e60bea0e8fba27330c8adba903 flabbergast - ChibiOS: Update infinity bootloader code to match updated ChibiOS.
-| * | | | | | | | aef7a2973e223bbfc813c97b6244edc403051a55 flabbergast - Chibios: Add breathing sleep LED on Kinetis MCUs.
-| * | | | | | | | 44421f5bf4a15e0e0cfdcc18e9008fc242c5308a flabbergast - ChibiOS: make reset request more CMSISy.
-| * | | | | | | | 7524f5c9c334103510aeaecd312f955421e6c86a flabbergast - Infinity_chibios: select correct bootloader_jump.
-| * | | | | | | | 0914c583518b3d80b668d1bc6265c15c92642047 flabbergast - Add correct chibios/bootloader_jump for infinity KB.
-| * | | | | | | | 7c4a2fab6d78e2f59f477bf75690a12c233b0ea7 flabbergast - Chibios/usb_main: rename a variable for clarity.
-| * | | | | | | | 8bcddd24f7320344aba9c9e757be2a7d516f4faa Jun Wako - Fix drop key stroke
-| * | | | | | | | dcac43fa510eb5087a3b80d5654ffaa98fa471d4 Jun Wako - Add keymap_hasu.c
-| * | | | | | | | 1c5c9d94c809dba7a487f07814de4701565f9092 Jun Wako - Fix report size of boot protocol.
+| + | | | | | | | c60dd8791808642420eea828b2217ec62fef0429 flabbergast - ChibiOS: prettify/document sleep_led code.
+| + | | | | | | | d3f4b01d220c55e60bea0e8fba27330c8adba903 flabbergast - ChibiOS: Update infinity bootloader code to match updated ChibiOS.
+| + | | | | | | | aef7a2973e223bbfc813c97b6244edc403051a55 flabbergast - Chibios: Add breathing sleep LED on Kinetis MCUs.
+| + | | | | | | | 44421f5bf4a15e0e0cfdcc18e9008fc242c5308a flabbergast - ChibiOS: make reset request more CMSISy.
+| + | | | | | | | 7524f5c9c334103510aeaecd312f955421e6c86a flabbergast - Infinity_chibios: select correct bootloader_jump.
+| + | | | | | | | 0914c583518b3d80b668d1bc6265c15c92642047 flabbergast - Add correct chibios/bootloader_jump for infinity KB.
+| + | | | | | | | 7c4a2fab6d78e2f59f477bf75690a12c233b0ea7 flabbergast - Chibios/usb_main: rename a variable for clarity.
+| + | | | | | | | 8bcddd24f7320344aba9c9e757be2a7d516f4faa Jun Wako - Fix drop key stroke
+| + | | | | | | | dcac43fa510eb5087a3b80d5654ffaa98fa471d4 Jun Wako - Add keymap_hasu.c
+| + | | | | | | | 1c5c9d94c809dba7a487f07814de4701565f9092 Jun Wako - Fix report size of boot protocol.
 | * | | | | | | |   054c86bfe88acb999478f0a7c648a774b8dde64f Jun Wako - Merge branch 'infinity_chibios' of ../tmk_chibios into infinity_chibios
 | |\ \ \ \ \ \ \ \  
-| | * | | | | | | | fd71b3f4eff1825d6527b1c657e88e2e3bd87483 Jun Wako - Add infinity_chibios
+| | + | | | | | | | fd71b3f4eff1825d6527b1c657e88e2e3bd87483 Jun Wako - Add infinity_chibios
 | * | | | | | | | |   983d3be2da1231907aa735037b6b68717417b4a4 Jun Wako - Merge branch 'chibios' of https://github.com/flabbergast/tmk_keyboard into flabbergast-tmk_chibios
 | |\ \ \ \ \ \ \ \ \  
-| | * | | | | | | | | 6def1045305aaf9c539b5ebbe04232a4c83662ec flabbergast - ChibiOS/STM32: send remote wakeup.
+| | + | | | | | | | | 6def1045305aaf9c539b5ebbe04232a4c83662ec flabbergast - ChibiOS/STM32: send remote wakeup.
 | | |/ / / / / / / /  
-| | * | | | | | | | 2e06ccf70a7f86e4abeaf5cec73886c909a2f7a9 flabbergast - ChibiOS/kinetis: sending remote wakeup.
-| | * | | | | | | | aa2c56823574b56735b81e5db08bd9c2ec501294 flabbergast - Update chibios/Teensy instructions.
-| | * | | | | | | | b25da7a51df91a73520df5f5120478438d84dad7 flabbergast - Update chibi/teensy instructions.
-| | * | | | | | | | c1c8e079ca78937096238f11f5ed6ee87cc743ef flabbergast - Chibios: use WFI in idle. WIP suspend stuff.
-| | * | | | | | | | c61210cfff21f88c25ad102dcd3afe58ce251c96 flabbergast - Add Teensy LC onekey example.
-| | * | | | | | | | 2b4066bb93ffda75dde58342a21c28878b6f50e6 flabbergast - Move chibios/cortex selection to local Makefiles.
-| | * | | | | | | | 9178ea2d73511786182317fe3e7b8ffc02cc3dc4 flabbergast - Rename chibios example keyboard.
-| | * | | | | | | | 2ac5cd730bf1578e9d593f83926a49b9053c4919 flabbergast - Add eeprom support for chibios/kinetis.
-| | * | | | | | | | cb663eeca6f5f2924974b4c6798a64489a5cdacc flabbergast - Move declaration of keymap_config.
-| | * | | | | | | | d9652cdf992baaa066f75866689ac50d2b37cb9f flabbergast - Make bootmagic.c code portable (_delay_ms -> wait_ms).
-| | * | | | | | | | cd7f30299a26dd32d19ef8ddd587eb8e1a5d4958 flabbergast - Add missing #include to keymap.c.
+| | + | | | | | | | 2e06ccf70a7f86e4abeaf5cec73886c909a2f7a9 flabbergast - ChibiOS/kinetis: sending remote wakeup.
+| | + | | | | | | | aa2c56823574b56735b81e5db08bd9c2ec501294 flabbergast - Update chibios/Teensy instructions.
+| | + | | | | | | | b25da7a51df91a73520df5f5120478438d84dad7 flabbergast - Update chibi/teensy instructions.
+| | + | | | | | | | c1c8e079ca78937096238f11f5ed6ee87cc743ef flabbergast - Chibios: use WFI in idle. WIP suspend stuff.
+| | + | | | | | | | c61210cfff21f88c25ad102dcd3afe58ce251c96 flabbergast - Add Teensy LC onekey example.
+| | + | | | | | | | 2b4066bb93ffda75dde58342a21c28878b6f50e6 flabbergast - Move chibios/cortex selection to local Makefiles.
+| | + | | | | | | | 9178ea2d73511786182317fe3e7b8ffc02cc3dc4 flabbergast - Rename chibios example keyboard.
+| | + | | | | | | | 2ac5cd730bf1578e9d593f83926a49b9053c4919 flabbergast - Add eeprom support for chibios/kinetis.
+| | + | | | | | | | cb663eeca6f5f2924974b4c6798a64489a5cdacc flabbergast - Move declaration of keymap_config.
+| | + | | | | | | | d9652cdf992baaa066f75866689ac50d2b37cb9f flabbergast - Make bootmagic.c code portable (_delay_ms -> wait_ms).
+| | + | | | | | | | cd7f30299a26dd32d19ef8ddd587eb8e1a5d4958 flabbergast - Add missing #include to keymap.c.
 | | * | | | | | | |   b388269407881b101c13cbeef68f84b714aa9dc9 flabbergast - Merge branch 'master' into chibios
 | | |\ \ \ \ \ \ \ \  
-| | * | | | | | | | | 3c08375616beed21b9882231795b2fd05ff4f3ad flabbergast - Fix chibios/usb_main GET_REPORT handing.
-| | * | | | | | | | | 19bb28d102b8c9b226aae38e2d8d9e53e574d6ec flabbergast - Add ARM Teensies bootloader code.
-| | * | | | | | | | | 88c053f78e24d9906c0f469ab1862a468044a376 flabbergast - Move STM32 bootloader address config to separate .h file.
-| | * | | | | | | | | 438559f11dba792630201d66a2b690760550c2e2 flabbergast - Rename some Makefile defines.
-| | * | | | | | | | | 1bcf15a8ea08b1728bc6caf27117a5ade0659a15 flabbergast - Add comments to chibi_onekey Makefile.
-| | * | | | | | | | | a24ddf3403670724b798d18e1d39bc3f0751aecf flabbergast - NKRO fixes.
-| | * | | | | | | | | 9540016b12f2182dc6ced530d2a9ab399a2b2ca1 flabbergast - Update chibios README.
-| | * | | | | | | | | 66b64efc3d5113f7909e43fa63da9bfdfce2d853 flabbergast - Add chibi_onekey example.
-| | * | | | | | | | | dc9fc9a7a457d44efc45f1dce51db3c5d4bc17c9 flabbergast - Add basic sleep_led for chibios.
-| | * | | | | | | | | 7d4f3dd5a148f922007f321a0bb61a571d5bbbc9 flabbergast - Move AVR specific sleep_led.c into avr.
-| | * | | | | | | | | 5248511209cb765c2548c7037801a8102c75f5a5 flabbergast - Fix bootloader-jump compiling.
-| | * | | | | | | | | 9cc281b4efdf2dcd817189bb8e633578d638bc45 flabbergast - Small updates.
-| | * | | | | | | | | d057e5157ed22508ce87f8fef113be52674ba209 flabbergast - Implement jump-to-bootloader.
-| | * | | | | | | | | 8152d279a4a4aa01f7d3f0a0a7b09e2081aa0d93 flabbergast - Move chibios to tool.
-| | * | | | | | | | | 1d115301d4134f59e8043a34400f08aac094704e flabbergast - Make usb_main more USB_DRIVER #define independent.
-| | * | | | | | | | | 27dec2db7bb33cc45b04b89b6855bac6b98de2e5 flabbergast - Add ChibiOS support (USB stack + support files).
+| | + | | | | | | | | 3c08375616beed21b9882231795b2fd05ff4f3ad flabbergast - Fix chibios/usb_main GET_REPORT handing.
+| | + | | | | | | | | 19bb28d102b8c9b226aae38e2d8d9e53e574d6ec flabbergast - Add ARM Teensies bootloader code.
+| | + | | | | | | | | 88c053f78e24d9906c0f469ab1862a468044a376 flabbergast - Move STM32 bootloader address config to separate .h file.
+| | + | | | | | | | | 438559f11dba792630201d66a2b690760550c2e2 flabbergast - Rename some Makefile defines.
+| | + | | | | | | | | 1bcf15a8ea08b1728bc6caf27117a5ade0659a15 flabbergast - Add comments to chibi_onekey Makefile.
+| | + | | | | | | | | a24ddf3403670724b798d18e1d39bc3f0751aecf flabbergast - NKRO fixes.
+| | + | | | | | | | | 9540016b12f2182dc6ced530d2a9ab399a2b2ca1 flabbergast - Update chibios README.
+| | + | | | | | | | | 66b64efc3d5113f7909e43fa63da9bfdfce2d853 flabbergast - Add chibi_onekey example.
+| | + | | | | | | | | dc9fc9a7a457d44efc45f1dce51db3c5d4bc17c9 flabbergast - Add basic sleep_led for chibios.
+| | + | | | | | | | | 7d4f3dd5a148f922007f321a0bb61a571d5bbbc9 flabbergast - Move AVR specific sleep_led.c into avr.
+| | + | | | | | | | | 5248511209cb765c2548c7037801a8102c75f5a5 flabbergast - Fix bootloader-jump compiling.
+| | + | | | | | | | | 9cc281b4efdf2dcd817189bb8e633578d638bc45 flabbergast - Small updates.
+| | + | | | | | | | | d057e5157ed22508ce87f8fef113be52674ba209 flabbergast - Implement jump-to-bootloader.
+| | + | | | | | | | | 8152d279a4a4aa01f7d3f0a0a7b09e2081aa0d93 flabbergast - Move chibios to tool.
+| | + | | | | | | | | 1d115301d4134f59e8043a34400f08aac094704e flabbergast - Make usb_main more USB_DRIVER #define independent.
+| | + | | | | | | | | 27dec2db7bb33cc45b04b89b6855bac6b98de2e5 flabbergast - Add ChibiOS support (USB stack + support files).
 | | * | | | | | | | | be9be90483ce083490c11b1ae4695ec5149bc783 flabbergast - Modularity and gcc warnings fixes.
 * | | | | | | | | | | 99732d5acd64aa805fd9a5bf5d831377cbe3f6c7 tmk - ibm4704_usb: Fix README.md
 * | | | | | | | | | | 3730666b9788ce93a93185ef8ca76a5f5b770abd tmk - ibm4704_usb: Add Makefiles for TMK Converter
