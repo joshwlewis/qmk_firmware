@@ -102,8 +102,8 @@ def cherry_pick_keyboard():
         for commit in selected_commits(name):
             subprocess.call("git cherry-pick --no-commit %s" % commit)
             subprocess.call("git reset HEAD tmk_core/**")
-            subprocess.call("git clean -d  -f -- tmk_core/\\*\\*")
-            subprocess.call("git checkout tmk_core/\\*\\*")
+            subprocess.call("git clean -d  -f -- tmk_core/**")
+            subprocess.call("git checkout -- tmk_core/**")
             my_env = os.environ.copy()
             my_env["GIT_EDITOR"] = "'%s'" % os.path.join(working_dir, "null_editor")
             subprocess.call("git commit", env=my_env)
@@ -116,5 +116,5 @@ if __name__ == "__main__":
     create_branch(core_branch)
     create_branch(keyboard_branch)
     create_branch(final_branch)
-    #cherry_pick_core()
+    cherry_pick_core()
     cherry_pick_keyboard()
