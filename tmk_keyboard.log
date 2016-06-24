@@ -59,7 +59,7 @@
 | | | | * | e49851aac0ea25d646375f7a0657ec2bde857c02 flabbergast - Chibios: add default location for chibios-contrib.
 * | | | | |   57f0ab5563aff4c4801241fa25bb4b7a7129ed6c tmk - Merge branch 'flabbergast-update'
 |\ \ \ \ \ \  
-| * | | | | | 82e8e6fbaad8636118f2439996efcff23aa91c22 flabbergast - Chibios: update examples to current chibios git.
+| + | | | | | 82e8e6fbaad8636118f2439996efcff23aa91c22 flabbergast - Chibios: update examples to current chibios git.
 |/ / / / / /  
 * | | | | | e661296200233c2c721be857d551644324793536 tmk - core: Add comment of register 3 of ADB
 * | | | | |   41d8811c3576475fde835e4d1b44ad212bd5d22b tmk - Merge branch 'adb_iso_fix'
