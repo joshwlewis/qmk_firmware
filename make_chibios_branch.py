@@ -45,13 +45,27 @@ def cherry_pick_core():
     subprocess.call("git checkout %s" % core_branch)
     subprocess.call("git reset --hard %s" % core_start_commit)
     cherry("chibios.log")
+    # Need to rebase here, so that we can cleanly merge later on
+    subprocess.call("git rebase %s" % start_commit)
+    # Resolve the conflict that we have
+    with open("tmk_core/common/command.c", "wb+") as f:
+        p = subprocess.Popen("git show 72b16683408810856e9d33b1f521ad6a15bf0699:tmk_core/common/command.c",
+                             stdout=subprocess.PIPE)
+        out, _ = p.communicate()
+        f.write(out)
+    subprocess.call("git add tmk_core/common/command.c")
+    subprocess.call("git rebase --continue")
+    cherry("chibios2.log")
     # We have a conflict here in README.md, which we need to resolve
-    with open("tmk_core/protocol/chibios/README.md") as f:
-        subprocess.call("git show c9a56f9a8592e1389de4857a93a84a324b02e426:protocol/chibios/README.md", stdout=f)
+    with open("tmk_core/protocol/chibios/README.md", "wb+") as f:
+        p = subprocess.Popen("git show c9a56f9a8592e1389de4857a93a84a324b02e426:protocol/chibios/README.md",
+                             stdout=subprocess.PIPE)
+        out, _ = p.communicate()
+        f.write(out)
 
     subprocess.call("git add tmk_core/protocol/chibios/README.md")
     subprocess.call("git cherry-pick --continue", env=get_null_edior_env())
-    cherry("chibios2.log")
+    cherry("chibios3.log")
 
 
 def cherry_pick_keyboard():
