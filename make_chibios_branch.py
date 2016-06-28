@@ -7,6 +7,7 @@ start_commit = "fa33719adab1393753312d298b8c365e04e844b9"
 core_branch = "qmk_chibios_core"
 keyboard_branch = "qmk_chibios_keyboard"
 merge_branch = "qmk_merged"
+chibios_branch = "qmk_chibios"
 working_dir = os.path.dirname(os.path.realpath(__file__))
 
 def create_branch(name):
@@ -57,7 +58,14 @@ def cherry_pick_keyboard():
             subprocess.call("git reset HEAD tmk_core/**")
             subprocess.call("git clean -d  -f -- tmk_core/**")
             subprocess.call("git checkout -- tmk_core/**")
-            subprocess.call("git commit", env=get_null_edior_env())
+            format = r"%an <%ae>%n%ad"
+            p = subprocess.Popen("git show --format=format:\"%s\" --no-patch %s" % (format, commit),
+                                 stdout=subprocess.PIPE, universal_newlines=True)
+            out, _ = p.communicate()
+            sys.stdout.flush()
+            out = out.split("\n")
+            subprocess.call("git commit --author \"%s\" --date \"%s\"" % (out[0].strip(), out[1].strip()),
+                            env=get_null_edior_env())
 
     subprocess.call("git checkout %s" % keyboard_branch)
     subprocess.call("git reset --hard %s" % start_commit)
@@ -70,6 +78,10 @@ def merge_branches():
     subprocess.call("git merge %s" % core_branch, env=get_null_edior_env())
     subprocess.call("git merge %s" % keyboard_branch, env=get_null_edior_env())
 
+def rebase_qmk_chibios():
+    subprocess.call("git checkout %s" % chibios_branch)
+    subprocess.call("git rebase %s" % merge_branch)
+
 if __name__ == "__main__":
     create_branch(core_branch)
     create_branch(keyboard_branch)
@@ -77,3 +89,4 @@ if __name__ == "__main__":
     cherry_pick_core()
     cherry_pick_keyboard()
     merge_branches()
+    rebase_qmk_chibios()
