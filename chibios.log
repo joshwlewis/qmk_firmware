@@ -105,7 +105,7 @@
 | + | | | | | 7e81b34a0f924a47d21a39dd2344e5e052248daa flabbergast - Move chibios to tool.
 | + | | | | | 923a892ba551d2461c518ab359f5576f12115db1 flabbergast - Make usb_main more USB_DRIVER #define independent.
 | + | | | | | aa054f0eb6b85f3303c792a86bf75af44a6f3947 flabbergast - Add ChibiOS support (USB stack + support files).
-| * | | | | | 1e3e2822599f600baf448055335c7aafe25e8052 flabbergast - Modularity and gcc warnings fixes.
+| + | | | | | 1e3e2822599f600baf448055335c7aafe25e8052 flabbergast - Modularity and gcc warnings fixes.
 |  / / / / /  
 * | | | | | f218a3898995de77996373a5298ba22511c80717 tmk - core: Remove unused warning. Fix tmk_keyboard/#293
 * | | | | | cecc8070353388214c543383682b9a7ac60f897a Kai Ryu - core: Speed up compilation

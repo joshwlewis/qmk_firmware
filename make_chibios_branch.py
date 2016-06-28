@@ -4,13 +4,14 @@ import sys
 import re
 
 start_commit = "fa33719adab1393753312d298b8c365e04e844b9"
+core_start_commit = "455fd51a87693e8368a520730082fdc0a7c377eb"
 core_branch = "qmk_chibios_core"
 keyboard_branch = "qmk_chibios_keyboard"
 merge_branch = "qmk_merged"
 chibios_branch = "qmk_chibios"
 working_dir = os.path.dirname(os.path.realpath(__file__))
 
-def create_branch(name):
+def create_branch(name, start_commit):
     ret = subprocess.call("git rev-parse --verify %s" % name)
     if ret != 0:
         print "Branch %s does not exist, creating..." % name
@@ -38,9 +39,11 @@ def get_null_edior_env():
 def cherry_pick_core():
     def cherry(name):
         for commit in selected_commits(name):
+            print "Cherry picking %s" % commit
+            sys.stdout.flush()
             subprocess.call("git cherry-pick -X subtree=tmk_core %s" % commit)
     subprocess.call("git checkout %s" % core_branch)
-    subprocess.call("git reset --hard %s" % start_commit)
+    subprocess.call("git reset --hard %s" % core_start_commit)
     cherry("chibios.log")
     # We have a conflict here in README.md, which we need to resolve
     with open("tmk_core/protocol/chibios/README.md") as f:
@@ -83,9 +86,9 @@ def rebase_qmk_chibios():
     subprocess.call("git rebase %s" % merge_branch)
 
 if __name__ == "__main__":
-    create_branch(core_branch)
-    create_branch(keyboard_branch)
-    create_branch(merge_branch)
+    create_branch(core_branch, core_start_commit)
+    create_branch(keyboard_branch, start_commit)
+    create_branch(merge_branch, start_commit)
     cherry_pick_core()
     cherry_pick_keyboard()
     merge_branches()
