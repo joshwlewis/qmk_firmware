@@ -10,6 +10,7 @@
 #include "mousekey.h"
 #include "timer.h"
 #include "keymap_plover.h"
+#include "wait.h"
 
 /* Layers */
 
@@ -848,12 +849,12 @@ void matrix_init_user(void) {
   ergodox_led_all_on();
   for (int i = LED_BRIGHTNESS_HI; i > LED_BRIGHTNESS_LO; i--) {
     ergodox_led_all_set (i);
-    _delay_ms (5);
+    wait_ms (5);
   }
-  _delay_ms(1000);
+  wait_ms(1000);
   for (int i = LED_BRIGHTNESS_LO; i > 0; i--) {
     ergodox_led_all_set (i);
-    _delay_ms (10);
+    wait_ms (10);
   }
   ergodox_led_all_off();
 };
@@ -867,14 +868,14 @@ void ang_do_unicode (void) {
   unregister_code (KC_U);
   unregister_code (KC_RSFT);
   unregister_code (KC_RCTL);
-  _delay_ms (100);
+  wait_ms (100);
 }
 
 void ang_tap (uint16_t codes[]) {
   for (int i = 0; codes[i] != 0; i++) {
     register_code (codes[i]);
     unregister_code (codes[i]);
-    _delay_ms (50);
+    wait_ms (50);
   }
 }
 
@@ -1026,7 +1027,7 @@ void matrix_scan_user(void) {
       unregister_code (KC_F2);
       unregister_code (KC_LALT);
 
-      _delay_ms (1000);
+      wait_ms (1000);
 
       uint16_t codes[] = {KC_M, KC_A, KC_X, KC_MINS, KC_F, KC_O, KC_C, KC_U, KC_S, KC_E, KC_D, KC_ENT, 0};
       ang_tap (codes);
@@ -1044,14 +1045,14 @@ void matrix_scan_user(void) {
 
         ergodox_led_all_off ();
         ergodox_right_led_3_on ();
-        _delay_ms (100);
+        wait_ms (100);
         ergodox_right_led_2_on ();
-        _delay_ms (100);
+        wait_ms (100);
         ergodox_right_led_3_off ();
         ergodox_right_led_1_on ();
-        _delay_ms (100);
+        wait_ms (100);
         ergodox_right_led_2_off ();
-        _delay_ms (100);
+        wait_ms (100);
         ergodox_right_led_1_off ();
       } else {
         is_exp = 0;
@@ -1060,14 +1061,14 @@ void matrix_scan_user(void) {
 
         ergodox_led_all_off ();
         ergodox_right_led_1_on ();
-        _delay_ms (100);
+        wait_ms (100);
         ergodox_right_led_2_on ();
-        _delay_ms (100);
+        wait_ms (100);
         ergodox_right_led_1_off ();
         ergodox_right_led_3_on ();
-        _delay_ms (100);
+        wait_ms (100);
         ergodox_right_led_2_off ();
-        _delay_ms (100);
+        wait_ms (100);
         ergodox_right_led_3_off ();
       }
     }
