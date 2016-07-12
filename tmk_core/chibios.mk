@@ -145,7 +145,11 @@ DEBUG = gdb
 
 # Define ASM defines here
 # bootloader definitions may be used in the startup .s file
-ifneq ("$(wildcard $(KEYBOARD_PATH)/bootloader_defs.h)","")
+ifneq ("$(wildcard $(KEYBOARD_PATH)/$(SUBPROJECT)/bootloader_defs.h)","")
+    OPT_DEFS += -include $(KEYBOARD_PATH)/$(SUBPROJECT)/bootloader_defs.h
+else ifneq ("$(wildcard $(KEYBOARD_PATH)/$(SUBPROJECT)/boards/$(BOARD)/bootloader_defs.h)","")
+    OPT_DEFS += -include $(KEYBOARD_PATH)/$(SUBPROJECT)/boards/$(BOARD)/bootloader_defs.h
+else ifneq ("$(wildcard $(KEYBOARD_PATH)/bootloader_defs.h)","")
     OPT_DEFS += -include $(KEYBOARD_PATH)/bootloader_defs.h
 else ifneq ("$(wildcard $(KEYBOARD_PATH)/boards/$(BOARD)/bootloader_defs.h)","")
     OPT_DEFS += -include $(KEYBOARD_PATH)/boards/$(BOARD)/bootloader_defs.h
