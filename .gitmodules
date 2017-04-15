@@ -6,7 +6,7 @@
 	url = https://github.com/ChibiOS/ChibiOS-Contrib.git
 [submodule "lib/ugfx"]
 	path = lib/ugfx
-	url = https://bitbucket.org/Tectu/ugfx
+	url = ../uGFX
 [submodule "lib/googletest"]
 	path = lib/googletest
 	url = https://github.com/google/googletest
