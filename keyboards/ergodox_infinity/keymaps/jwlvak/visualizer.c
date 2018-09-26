@@ -339,14 +339,14 @@ static void get_visualizer_layer_and_color(visualizer_state_t* state) {
         start_keyframe_animation(&led_test_animation);
     }
     else if (state->status.layer & 0x2) {
-        state->target_lcd_color = LCD_COLOR(CYAN, saturation, 0xFF);
-        state->layer_text = "Dvorak :)";
+        state->target_lcd_color = LCD_COLOR(VIOLET, saturation, 0xFF);
+        state->layer_text = "Qwerty :/";
         stop_keyframe_animation(&led_test_animation);
         start_keyframe_animation(&sweep_on_sweep_off_left_and_right);
     }
     else {
-        state->target_lcd_color = LCD_COLOR(VIOLET, saturation, 0xFF);
-        state->layer_text = "Qwerty :/";
+        state->target_lcd_color = LCD_COLOR(CYAN, saturation, 0xFF);
+        state->layer_text = "Dvorak :)";
         stop_keyframe_animation(&led_test_animation);
         stop_keyframe_animation(&sweep_on_sweep_off_left_and_right);
         start_keyframe_animation(&Fade_in_all_leds);
