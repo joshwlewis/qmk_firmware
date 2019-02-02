@@ -42,11 +42,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [PRK] = LAYOUT_preonic_grid( \
-  KC_F11,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,    KC_F8,   KC_F9,   KC_F10,  KC_F12,          \
-  AG_TOGG, _______, _______, _______, _______, _______, _______, TERM_OFF, RESET,   DEBUG,   TERM_ON, AU_TOG,          \
-  _______, _______, _______, _______, _______, KC_MPRV, KC_MRWD, KC_VOLD,  KC_VOLU, KC_MFFD, KC_MNXT, MU_TOG,          \
-  _______, DF(QRT), _______, _______, _______, _______, _______, _______,  _______, _______, DF(DVK), CK_TOGG,         \
-  _______, _______, _______, _______, KC_CAPS, KC_DEL,  KC_MPLY, KC_HOME,  KC_PGDN, KC_PGUP, KC_END,  _______          \
+  KC_PWR,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,    KC_F8,   KC_F9,   KC_F10,  AG_TOGG,         \
+  _______, KC_F11,  KC_F12,  KC_F13,  KC_F14,  KC_F15,  KC_F16,  KC_F17,   KC_F18,  KC_F19,  KC_F20,  AU_TOG,          \
+  _______, KC_NUHS, KC_NUBS, _______, _______, KC_BRID, KC_BRIU, KC_VOLD,  KC_VOLU, KC_MUTE, KC_MPLY, MU_TOG,          \
+  _______, DF(QRT), _______, KC_SLCK, KC_PSCR, KC_PAUS, KC_MPRV, KC_MNXT,  KC_MRWD, KC_MFFD, DF(DVK), CK_TOGG,         \
+  _______, _______, _______, _______, KC_CAPS, KC_DEL,  KC_INS,  KC_HOME,  KC_PGDN, KC_PGUP, KC_END,  _______          \
 )
 
 };
